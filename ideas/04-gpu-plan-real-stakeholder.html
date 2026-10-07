@@ -1,0 +1,144 @@
+<title>Pay-Per-Use AI Hosting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: single readable column, plain proposal; tables scroll inside their own box */
+:root{
+  --bg:#f6f7f9; --fg:#1b2230; --muted:#5a6475; --line:#d9dee6; --accent:#2d5bd7; --soft:#e8eefc;
+  --display:"Fraunces",Georgia,serif; --body:"Source Sans 3",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12161d;--fg:#e4e8ef;--muted:#9aa4b5;--line:#2a313d;--accent:#7fa2ff;--soft:#1c2433;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12161d;--fg:#e4e8ef;--muted:#9aa4b5;--line:#2a313d;--accent:#7fa2ff;--soft:#1c2433;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:17px/1.6 var(--body);padding-inline:16px;padding-block:40px 64px}
+main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:36px}
+h1,h2{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:2.1rem}
+h2{font-size:1.35rem;margin-bottom:10px}
+p{margin:0 0 10px}
+.eyebrow{font:12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.lede{color:var(--muted);font-size:1.1rem;margin-top:10px}
+.statement{background:var(--soft);border-left:3px solid var(--accent);padding:16px 18px;border-radius:4px;font-size:1.08rem}
+ul,ol{margin:0;padding-left:22px}
+li{margin-bottom:6px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+td.n{font-family:var(--mono);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.note{font-size:14px;color:var(--muted)}
+strong{font-weight:600}
+@media print{body{background:#fff;padding:0}section,table,tr{break-inside:avoid}h2{break-after:avoid}}
+@page{margin:16mm}
+</style>
+<main>
+<header>
+  <div class="eyebrow">COMP-8117 · SPLASH proposal · draft for team</div>
+  <h1>Pay-per-use AI hosting for a real team</h1>
+  <p class="lede">We help a real team run their AI model so they stop paying for idle GPUs, without slow or failed responses when traffic spikes.</p>
+</header>
+
+<section>
+  <h2>The problem</h2>
+  <p class="statement">[Real team] pays for a GPU that sits idle most of the day. Turning it off saves money but makes users wait or get errors when usage suddenly jumps. <strong>How can they pay only for what they use and still stay fast and reliable?</strong></p>
+  <p>We prove the problem is real with <strong>their</strong> evidence: their GPU bill, their usage logs, past slowdowns or errors, and an interview with whoever pays or fixes it.</p>
+</section>
+
+<section>
+  <h2>Who is involved</h2>
+  <ul>
+    <li><strong>Feels the problem:</strong> the people using the model (they wait or get errors)</li>
+    <li><strong>Owns the problem:</strong> whoever pays the GPU bill (lab lead, founder)</li>
+    <li><strong>Can change it:</strong> the team's developer or admin</li>
+    <li><strong>Uses our software:</strong> that developer, who deploys the model on our setup</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What we research</h2>
+  <ol>
+    <li>Where does the money go? Busy hours vs idle hours.</li>
+    <li>What does usage look like? Steady, bursty, deadline spikes?</li>
+    <li>How long can users wait before it's a problem?</li>
+    <li>Which option fits best? We compare smaller GPU, smaller (quantized) model, serverless scale-to-zero, spot instances, batching, and a queue.</li>
+    <li>We test the top 2–3 options with their real model and measure the trade-offs.</li>
+  </ol>
+  <p class="note">The finding is which option wins for <em>their</em> usage, backed by numbers. We don't pick the answer first.</p>
+</section>
+
+<section>
+  <h2>What we build</h2>
+  <p>A small system, only as much as the findings need: an API that accepts requests, a queue that absorbs spikes, GPU workers that scale down to zero when idle, and a dashboard showing cost, wait time and errors. We deploy it through dev, staging and prod.</p>
+  <p class="note">No user accounts, no polished frontend, no business model.</p>
+</section>
+
+<section>
+  <h2>How we know it worked</h2>
+  <p>We set targets <strong>before</strong> building, then run their real workload on our setup for 2–3 weeks and compare it with their old setup.</p>
+  <div class="wrap"><table>
+    <tr><th>Measure</th><th>Target</th><th>Evidence</th></tr>
+    <tr><td>Monthly GPU cost</td><td class="n">≥ 50% lower</td><td>Their bill, before vs after</td></tr>
+    <tr><td>Cost when idle</td><td class="n">≈ $0</td><td>Worker count 0 + billing</td></tr>
+    <tr><td>Failed requests</td><td class="n">≈ 0%</td><td>Logs and dashboard</td></tr>
+    <tr><td>Response time (95%)</td><td class="n">≤ X s</td><td>Dashboard; X agreed with the team</td></tr>
+  </table></div>
+  <p class="note">Exact targets are set once we see their data.</p>
+</section>
+
+<section>
+  <h2>Roles</h2>
+  <p>No one needs DevOps experience except the Platform lead. Deployment is one command with a written guide, and everyone pairs on at least one deploy.</p>
+  <div class="wrap"><table>
+    <tr><th>Role</th><th>Owner</th><th>Does</th></tr>
+    <tr><td>Platform / DevOps (lead)</td><td>Abhinav</td><td>Cloud, deploys, scaling, budget</td></tr>
+    <tr><td>Research &amp; stakeholder</td><td>[name]</td><td>Interviews, bill and usage analysis, success targets</td></tr>
+    <tr><td>Backend</td><td>[name]</td><td>API and queue (regular Python coding)</td></tr>
+    <tr><td>Testing &amp; evaluation</td><td>[name]</td><td>Load tests, before/after comparison, rubrics</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>How this earns marks</h2>
+  <div class="wrap"><table>
+    <tr><th>Graded on</th><th>How we cover it</th></tr>
+    <tr><td>Real, documented problem</td><td>Real team, their bill, logs and interview</td></tr>
+    <tr><td>Intervention follows from analysis</td><td>Options compared with data before we build</td></tr>
+    <tr><td>Product works (15%)</td><td>Runs on their real model and traffic</td></tr>
+    <tr><td>Method and resources (15%)</td><td>Decisions log, budget tracking incl. our hours, dev → staging → prod</td></tr>
+    <tr><td>Problem reduced</td><td>Before/after numbers against preset targets</td></tr>
+    <tr><td>Scalable impact</td><td>Plan for bigger models and more teams</td></tr>
+    <tr><td>Judgment</td><td>Our own rubrics, compared with the teaching team's</td></tr>
+    <tr><td>Reflection (10%, individual)</td><td>Each person writes about their own decisions at every milestone</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>Timeline</h2>
+  <div class="wrap"><table>
+    <tr><th>When</th><th>What</th></tr>
+    <tr><td class="n">Wk 3 (now)</td><td>Expert Review 1: present the pivot to a real team</td></tr>
+    <tr><td class="n">Wk 4</td><td>Find and sign the real team (Reading Week)</td></tr>
+    <tr><td class="n">Wk 5–6</td><td>Collect their data, compare options, set targets. Expert Review 2 (Oct 28)</td></tr>
+    <tr><td class="n">Wk 7–8</td><td>Build and deploy the chosen setup; run on staging</td></tr>
+    <tr><td class="n">Wk 9–10</td><td>Real usage for 2–3 weeks, measure before/after (ends Nov 25)</td></tr>
+    <tr><td class="n">Wk 12</td><td>Final defense: live demo plus evidence</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>Budget</h2>
+  <p>About <strong>$250–$640</strong> total, using cloud credits first. Hard cap of $1,000/month with alerts and a kill switch. The real team's own spend should go <em>down</em>.</p>
+</section>
+
+<section>
+  <h2>Main risk</h2>
+  <p><strong>We can't find a real team by the end of week 4.</strong> Fallback: the same approach on cloud waste in a real account (a lab's or a small company's), which is cheaper and simpler and still measured with real bills.</p>
+</section>
+
+<section>
+  <h2>Why this project</h2>
+  <ul>
+    <li>Real problem with hard numbers, so it's easy to show results</li>
+    <li>Clear roles where everyone has their own work to show</li>
+    <li>Strong portfolio piece: cloud, AI and cost engineering</li>
+  </ul>
+</section>
+</main>
