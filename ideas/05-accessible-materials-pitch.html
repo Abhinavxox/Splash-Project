@@ -1,0 +1,138 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Accessible Course Materials</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--fg:#1b2230;--muted:#5a6475;--line:#d9dee6;--accent:#2d5bd7;--soft:#eef2fc}
+body{color:var(--fg);font:10.5pt/1.5 "Source Sans 3",system-ui,sans-serif;margin:0}
+@page{margin:15mm 16mm}
+h1,h2{font-family:"Fraunces",Georgia,serif;font-weight:600;margin:0;line-height:1.2}
+h1{font-size:22pt}
+h2{font-size:13.5pt;margin:20px 0 6px;color:var(--fg)}
+.eyebrow{font-size:8.5pt;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lede{color:var(--muted);font-size:11.5pt;margin:6px 0 0}
+.box{background:var(--soft);border-left:3px solid var(--accent);padding:10px 14px;margin:8px 0}
+p{margin:0 0 6px}
+ol,ul{margin:0;padding-left:20px}
+li{margin-bottom:3px}
+table{border-collapse:collapse;width:100%;margin:4px 0 6px;font-size:9.5pt}
+th,td{text-align:left;padding:5px 7px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:8pt;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.note{font-size:9pt;color:var(--muted)}
+section,table,tr{break-inside:avoid}
+h2{break-after:avoid}
+.part{margin-top:26px;padding-top:10px;border-top:2px solid var(--fg)}
+</style></head><body>
+
+<div class="eyebrow">COMP-8117 · SPLASH proposal · draft</div>
+<h1>Course materials every student can read</h1>
+<p class="lede">Turning lecture slides into files that blind and low-vision students can use with screen readers and braille displays, on the same day as everyone else.</p>
+
+<section>
+<h2>The problem</h2>
+<p>Blind and low-vision students read course materials with screen readers (speech) and braille displays. Both only work if a file is properly structured. Most lecture PDFs and slides are not: the reading order is scrambled, diagrams are read as just “image”, math comes out as gibberish, and tables become a jumble of numbers.</p>
+<p>The fix today is the accessibility office converting files by hand, which takes days. Sighted classmates have the material instantly.</p>
+<div class="box"><strong>Blind students fall behind, not because of ability, but because of file formats.</strong></div>
+</section>
+
+<section>
+<h2>What exists, and why it isn't enough</h2>
+<table>
+<tr><th>Today's approach</th><th>Where it fails</th></tr>
+<tr><td>Adobe's accessibility checker</td><td>Finds problems, doesn't fix diagrams or math</td></tr>
+<tr><td>Auto-tagging tools</td><td>Work on plain text, break on slides, math and tables</td></tr>
+<tr><td>Staff converting by hand</td><td>Accurate but slow, can't keep up</td></tr>
+<tr><td>Asking instructors to fix it</td><td>Most don't know how or don't have time</td></tr>
+</table>
+<p>Each tool solves one piece. Nobody has fixed the journey from the instructor's file to a student who can read it on time.</p>
+</section>
+
+<section>
+<h2>Our approach: investigate, then build</h2>
+<ol>
+<li><strong>Investigate (weeks 6–7).</strong> Interview the accessibility office, blind and low-vision students and instructors. Run real course files through today's tools and record where they break. Measure how long students wait.</li>
+<li><strong>Decide (week 7).</strong> The evidence chooses the fix. Working focus: math- and diagram-heavy lecture slides, turned into accessible HTML that works with screen readers and braille displays.</li>
+<li><strong>Build and test (weeks 8–10).</strong> Fix reading order and structure, add AI-written diagram descriptions, convert math to MathML, and flag anything uncertain for a human to check.</li>
+<li><strong>Prove it (weeks 9–10).</strong> Real files, real students, before and after.</li>
+</ol>
+<p class="note">We don't build braille output. Existing tools (Liblouis, MathCAT) handle that once content is structured correctly. This is a deliberate, recorded decision.</p>
+</section>
+
+<section>
+<h2>How we'll know it worked</h2>
+<table>
+<tr><th>Measure</th><th>Before</th><th>Goal</th></tr>
+<tr><td>Time until a student can use the file</td><td>Days</td><td>Same day</td></tr>
+<tr><td>Accessibility checker score</td><td>Measured on real files</td><td>Large improvement</td></tr>
+<tr><td>Screen-reader tasks completed (find a formula, explain a diagram, read a table)</td><td>Tested with real users</td><td>Clear improvement</td></tr>
+<tr><td>Staff time per document</td><td>Measured</td><td>Much less</td></tr>
+<tr><td>Accuracy of diagram descriptions</td><td>—</td><td>Checked by people, errors counted</td></tr>
+</table>
+<p class="note">Exact targets are fixed after we measure the baseline, before we build.</p>
+</section>
+
+<section>
+<h2>Team (each role essential)</h2>
+<table>
+<tr><th>Role</th><th>Owner</th><th>Owns</th></tr>
+<tr><td>Research &amp; users</td><td>[name]</td><td>Interviews, user testing, before/after measurement</td></tr>
+<tr><td>Document processing</td><td>[name]</td><td>Layout, reading order, tables, HTML output</td></tr>
+<tr><td>AI &amp; math</td><td>[name]</td><td>Diagram descriptions, math conversion, accuracy checks</td></tr>
+<tr><td>Platform &amp; quality</td><td>Abhinav</td><td>Pipeline, deployment, CI, budget, rubrics, decisions log</td></tr>
+</table>
+</section>
+
+<div class="part">
+<section>
+<h2>Meeting the defense requirements</h2>
+<table>
+<tr><th>Defense point</th><th>How we cover it</th></tr>
+<tr><td>1. The problem is real</td><td>Accessibility office interviews, measured turnaround, real files that fail</td></tr>
+<tr><td>2. The intervention fits</td><td>HTML and human review chosen because of our findings, recorded in the decisions log</td></tr>
+<tr><td>3. The product works</td><td>Real course files converted and used by real screen-reader users</td></tr>
+<tr><td>4. The method protects quality</td><td>Staged testing, accuracy checks, CI, budget tracking, adapting to evidence</td></tr>
+<tr><td>5. The problem is reduced</td><td>Before/after numbers against targets set in advance</td></tr>
+<tr><td>6. Real, scalable impact</td><td>Equal access; scales to other departments, universities, and the learning platform at upload</td></tr>
+<tr><td>7. Evidence-based reasoning</td><td>Every claim tied to a measurement, interview or log entry</td></tr>
+</table>
+</section>
+
+<section>
+<h2>How it earns marks</h2>
+<table>
+<tr><th>Graded component</th><th>How we earn it</th></tr>
+<tr><td>Product quality (15%)</td><td>Original (fixes diagrams and math where tools fail), works on real files, measured impact</td></tr>
+<tr><td>Methodology quality (15%)</td><td>Investigate first, decisions log, targets set in advance, budget and hours tracked</td></tr>
+<tr><td>Reflection (10%, individual)</td><td>Each person owns a hard decision to reflect on</td></tr>
+<tr><td>Competency floor</td><td>Learning Outcomes map tying each competency to evidence</td></tr>
+<tr><td>Judgment</td><td>Our own rubric, compared with the teaching team's</td></tr>
+</table>
+</section>
+</div>
+
+<section>
+<h2>Timeline</h2>
+<table>
+<tr><th>When</th><th>What</th></tr>
+<tr><td>Oct 26–27</td><td>Email the accessibility office, ask instructors for files, first baseline scores</td></tr>
+<tr><td><strong>Oct 28</strong></td><td><strong>Expert Review 2:</strong> problem, early evidence, plan</td></tr>
+<tr><td>Weeks 7–8</td><td>Interviews, analysis of where files break, decision, first pipeline</td></tr>
+<tr><td>Weeks 9–10</td><td>Real-file conversion, user testing, before/after (ends Nov 25)</td></tr>
+<tr><td>Week 11</td><td>Final analysis, reports</td></tr>
+<tr><td>Week 12</td><td>Defense: live demo plus evidence</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Risks</h2>
+<table>
+<tr><th>Risk</th><th>Plan</th></tr>
+<tr><td>Accessibility office slow to reply</td><td>Email now; instructors and students can still provide files and testing</td></tr>
+<tr><td>Few blind testers</td><td>3–5 users is enough; accessibility staff can also test</td></tr>
+<tr><td>AI describes diagrams wrongly</td><td>Measure accuracy, flag uncertain items for human review</td></tr>
+<tr><td>Privacy of course files</td><td>Use only files we have permission to use</td></tr>
+</table>
+<p><strong>Budget:</strong> about $50–100 (AI usage and hosting), plus team hours tracked weekly.</p>
+</section>
+
+</body></html>
