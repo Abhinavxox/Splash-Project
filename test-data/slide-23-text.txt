@@ -1,0 +1,12 @@
+Distance Metric to compare images
+L1 distance:
+
+add
+
+Fei-Fei Li, Ehsan Adeli
+
+Lecture 2 - 23
+
+April 4, 2023
+
+

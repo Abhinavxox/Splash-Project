@@ -1,0 +1,28 @@
+Parametric Approach: Linear Classifier
+3072x1
+
+Image
+
+f(x,W) = W x + b 10x1
+10x1
+
+10x3072
+
+f(x,W)
+Array of 32x32x3 numbers
+(3072 numbers total)
+
+10 numbers giving
+class scores
+
+W
+
+parameters
+or weights
+Fei-Fei Li, Ehsan Adeli
+
+Lecture 2 - 53
+
+April 4, 2023
+
+

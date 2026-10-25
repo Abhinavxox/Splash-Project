@@ -1,0 +1,23 @@
+First classifier: Nearest Neighbor
+?
+deer
+
+bird
+
+plane
+
+cat
+
+car
+
+Training data with labels
+query data
+
+Distance Metric
+Fei-Fei Li, Ehsan Adeli
+
+Lecture 2 - 22
+
+April 4, 2023
+
+

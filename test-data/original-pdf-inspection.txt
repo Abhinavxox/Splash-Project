@@ -1,0 +1,14 @@
+Producer:        macOS Version 14.4.1 (Build 23E224) Quartz PDFContext
+Tagged:          no
+Pages:           98
+
+pdfinfo -struct output:
+(empty, no structure tree)
+
+Images on page 23:
+page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio
+--------------------------------------------------------------------------------------------
+  23     0 image    2895   826  icc     3   8  jpeg   yes      233  0   300   300  272K 3.9%
+  23     1 smask    2895   826  gray    1   8  image  yes      233  0   300   300 11.9K 0.5%
+  23     2 image     813   222  icc     3   8  jpeg   yes      234  0   300   300 19.5K 3.7%
+  23     3 smask     813   222  gray    1   8  image  yes      234  0   300   300 1235B 0.7%
