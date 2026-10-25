@@ -4,7 +4,7 @@ COMP 8117 Expert Review 01
 
 Team members Abhinav Pandey (lead), Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
 
-Date [date]
+Date October 25, 2026
 
 **Executive summary**
 
