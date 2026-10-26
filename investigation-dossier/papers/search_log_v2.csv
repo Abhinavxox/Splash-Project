@@ -1,0 +1,12 @@
+date,database,group,query,filters,total_hits
+2026-10-26,OpenAlex,before_2020,"""software engineer"" ""software manager""","from_publication_date:2000-01-01,type:article|proceedings-article,to_publication_date:2019-12-31",95
+2026-10-26,OpenAlex,before_2020,"""engineering manager"" software","from_publication_date:2000-01-01,type:article|proceedings-article,to_publication_date:2019-12-31",778
+2026-10-26,OpenAlex,before_2020,"""software project manager"" role","from_publication_date:2000-01-01,type:article|proceedings-article,to_publication_date:2019-12-31",283
+2026-10-26,OpenAlex,before_2020,"""technical lead"" software team","from_publication_date:2000-01-01,type:article|proceedings-article,to_publication_date:2019-12-31",353
+2026-10-26,OpenAlex,2020_onward,"""software engineer"" ""software manager""","from_publication_date:2020-01-01,type:article|proceedings-article",58
+2026-10-26,OpenAlex,2020_onward,"""engineering manager"" software","from_publication_date:2020-01-01,type:article|proceedings-article",1057
+2026-10-26,OpenAlex,2020_onward,"""software engineering management""","from_publication_date:2020-01-01,type:article|proceedings-article",247
+2026-10-26,OpenAlex,2020_onward,"""technical lead"" software team","from_publication_date:2020-01-01,type:article|proceedings-article",545
+2026-10-26,OpenAlex,llm_agentic,"""large language models"" software engineering roles","from_publication_date:2022-01-01,type:article|proceedings-article",36257
+2026-10-26,OpenAlex,llm_agentic,"""AI agents"" software development team management","from_publication_date:2022-01-01,type:article|proceedings-article",4317
+2026-10-26,OpenAlex,llm_agentic,"""generative AI"" software engineers managers","from_publication_date:2022-01-01,type:article|proceedings-article",4156

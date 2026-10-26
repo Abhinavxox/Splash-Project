@@ -1,0 +1,5 @@
+date,database,query,filters,total_hits
+2026-10-26,OpenAlex,"""software engineer"" ""software manager""","from 2015, articles and proceedings, open access",87
+2026-10-26,OpenAlex,"""engineering manager"" software","from 2015, articles and proceedings, open access",1395
+2026-10-26,OpenAlex,"""software engineering management""","from 2015, articles and proceedings, open access",342
+2026-10-26,OpenAlex,"""technical lead"" software team","from 2015, articles and proceedings, open access",722
