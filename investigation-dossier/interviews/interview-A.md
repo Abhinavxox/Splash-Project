@@ -1,7 +1,7 @@
 # Interview A
 
 Interviewer: Nishan Giri
-Participant: Professional A, full stack software engineer, two years at current company. Name and company are kept out of this repository and go only in the confidential accompanying document for the instructors.
+Participant: Professional A, software engineer with more than 3 years of industry experience (about two of them at the current company), B.Eng. Name and company are kept out of this repository and go only in the confidential accompanying document for the instructors.
 Format: spoken interview, transcribed.
 
 ---

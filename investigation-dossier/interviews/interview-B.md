@@ -1,7 +1,7 @@
 # Interview B
 
 Interviewer: [team member]
-Participant: Professional B. Name, company and role go only in the confidential accompanying document for the instructors.
+Participant: Professional B, senior software engineer with more than 5 years of industry experience, B.Eng. Name, company and role go only in the confidential accompanying document for the instructors.
 Format: written answers.
 
 ---

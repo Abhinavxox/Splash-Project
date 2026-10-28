@@ -2,3 +2,4 @@
 test-data/cs231n_lecture2.pdf
 node_modules/
 .DS_Store
+*.log
