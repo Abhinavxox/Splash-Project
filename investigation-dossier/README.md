@@ -15,3 +15,11 @@ Team Abhinav Pandey, Shrijana Karki, Aakriti Mainali, Khemraj Adhikari and Nisha
 - `first-search/` the earlier single round search.
 
 Target after review is about 15 papers before 2020, about 10 from 2020 onward and about 5 on LLMs and AI agents. The search was run on OpenAlex. Run the same strings in IEEE Xplore and ACM through Leddy as well.
+
+## summaries
+
+Each member's paper summaries. The PDFs are the files as submitted and the `.txt` files are text copies for searching.
+
+## interviews
+
+Anonymized interview transcripts. See `interviews/README.md`.

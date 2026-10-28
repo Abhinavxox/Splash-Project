@@ -1,0 +1,127 @@
+1. Title: A Comparative Analysis of Gender based Management Styles of Software Project
+Managers
+Authors, year, where published: Ahmed Ali Qureshi, Saima Afzal, Imran Daud and
+Muhammad Asad Saleem, 2013, International Journal of Computer Applications (0975 – 8887)
+Volume 71– No.14
+Type of Study: Survey: 27- item questionnaire and interviews
+Who they studied: Employees who had worked under both a male and female SPMs (Software
+Project Managers). 100 Responses (40 males, 60 females) from software houses in Islamabad
+and Rawalpindi cities of Pakistan
+Main finding: Both male and female employees rated male SPMs higher in terms of leadership
+qualities, decision making, communication, initiative and problem solving. Female SPMs were
+rated as more biased, less approachable and more autocratic. The authors concluded that skills
+and training are more important factors than gender.
+Engineer vs Manager: This paper only shows what engineers think of manager’s styles.
+Useful for us because: It shows that engineers notice and judge manager behaviour such as
+approachability and fairness, which we can test in interviews.
+Quote or number worth citing: 82.5% of male and 50% of female employees chose male
+SPMs as more effective for running a project smoothly (p. 15).
+
+2. Title: Software Developers’ Perceptions of Soft Skills in Software Requirements Engineering
+Authors, year, where published: Tamara Zoric, Zeljko Stojanov, 2018, Journal of Engineering
+Management and Competitiveness (JEMC), Vol. 8 No. 1, pp. 54–64
+Type of Study: Semi-structured interviews
+Who they studied: 14 Software Developers ( 5 working in indigenous software companies, 6
+working for foreign software companies, and 3 working as freelancers) in the Banat region of
+Serbia.
+Main finding: The majority of software developers are aware that soft skills are necessary, but
+they don’t think about them day to day and just use them without noticing. Most of them see soft
+skills as communication with clients and fitting into the company. They said specialized courses
+and workshops could help them improve.
+Engineer vs manager: Only Engineers were interviewed. The authors suggest managers could
+use the findings to plan soft skills training sessions.
+Useful for us because: It gives the engineers’ own view that soft skills are important but taken
+for granted, which we can compare with what managers say.
+Quote or number worth citing: A short quote from Participant 1: soft skills are sometimes hard
+to recognise because technical skills are so important (p. 60).
+
+3. Title: How (Un)happiness Impacts on Software Engineers in Agile Teams?
+Authors, year, where published: Luís Felipe Amorim, Marcelo Marinho and Suzana Sampaio,
+2020, International Journal of Software Engineering & Applications (IJSEA), Vol.11, No.3
+Type of study: Case study (survey and interviews)
+Who they studied: 67 people (Testers, Developers, Project Managers, Technical Leads, Project
+Leader and UI/UX Designers) working in five different agile project teams in an Innovation
+Culture Company at Recife, Brazil.
+Main finding: Happiness factors for Software Engineers are effective communication, motivated
+team members, collaboration, proactive members, and present leaders.
+Engineer vs manager: Mostly the engineer view, but it shows managers and leaders affect
+engineer wellbeing through being present and recognising work.
+Useful for us because: It ties manager and leader behaviour directly to how engineers feel and
+perform.
+Quote or number worth citing: The five happiness factors are listed in the conclusion (p.
+55).(effective communication, motivated members, collaboration among members, proactive
+members, present leaders)
+
+4. Title: What Makes a Great Software Quality Assurance Engineer?
+Authors, year, where published: Roselane Silva Farias, Iftekhar Ahmed and Eduardo Santana
+de Almeida, 2025, IEEE Transactions on Software Engineering, Vol. 51, No. 4
+Type of study: Interviews and Survey
+Who they studied: 25 Software Quality Assurance(SQA) engineers interviewed from different
+companies from five countries: USA (13), Brazil (9), India (1), Portugal (1), and Canada (1).
+And 363 SQA professionals surveyed from 18 different nationalities.
+Main finding: They found 25 attributes in five groups (personal, social, technical, management
+and decision-making). The authors concluded that curiosity, effective communication, and
+critical thinking best separate great SQA engineers.
+Engineer vs manager: The paper compares SQA attributes with studies of software engineers
+and managers. 21 of the 25 SQA attributes also appeared in the software engineer studies, so
+the roles are very similar. Some attributes are role-specific, for example autonomy for
+managers.
+Useful for us because: This paper directly compares engineer and manager attributes so it’s
+the strongest source for similarities and differences between roles.
+Quote or number worth citing: Curiosity was mentioned by 20 of 25 interviewees (p. 5). 84%
+of great-SQA attributes are shared with software engineers (p. 16). Autonomy was only
+mentioned for managers (p. 12).
+
+5. Title: AI Agentic Scriptless Automation in Software Testing
+Authors, year, where published: Ganesh Viswanathan, 2024, International Journal of
+Computer Trends and Technology, Vol. 72 Issue 9, pp. 120–125
+Type of study: Review
+Who they studied: Nobody. It’s a technical overview of scriptless test tools and AI agents.
+Main finding: Scriptless testing (visual, keyword-based) reduces the scripting skills needed and
+the maintenance work. The paper argues the next step is AI agents that create, run, and repair
+tests with little human involvement. It also lists limits: limited customisation, performance
+overhead, vendor lock-in, and a learning curve for technical users.
+Engineer vs manager: It says almost nothing about either role. The closest point is that
+non-technical people could take part in testing.
+Useful for us because: It gives background on how AI may change testers' work, but it has no
+evidence about engineers or managers.
+Quote or number worth citing: Nothing
+6. Title: The Alignment Between Business Objectives Clarity and Software Objectives
+Authors, year, where published: Mohammad Mahmoud Tarawneh, 2019, Computer Engineering
+and Intelligent Systems (IISTE), Vol. 10 No. 2, pp. 28–32
+Type of study: Survey and Interviews
+Who they studied: 100 software project managers surveyed and 15 of them were interviewed
+in Jordan.
+Main finding: The author concludes that clear business objectives aligned with software
+objectives support project success. Managers reported high levels of problems such as weak
+priorities and unclear task order. Employees having the chance to ask what to do scored
+highest.
+Engineer vs manager: Only the manager view. Managers are responsible for clarifying
+objectives with business owners, and engineers depend on that.
+Useful for us because: It’s one of the only manager-only sources, and it supports the idea that
+unclear goals start with management but affect engineers.
+Quote or number worth citing: Overall mean of 3.61 (“high”), and “employees know the
+required objectives” ranked lowest at 62.9% (both p. 30). (Not relevant)
+
+Conclusions
+
+   ●​ Engineers only: Papers 2, 3, and 4 (and 1 gives engineers’ views of managers).
+      Managers only: Paper 6. No paper directly compares engineers and managers except
+      Paper 4.
+   ●​ Weak sources: Papers 1, 5, and 6 are low-tier. Paper 5 doesn’t fit and is a candidate for
+      “no” and a replacement. Papers 1 and 6 could be kept as weak evidence.
+   ●​ Key references to look up: Li, Ko and Zhu (2015) and Kalliamvakou et al. (2019).
+      Kalliamvakou et al. could be the best replacement or addition, since it studies engineers
+      and managers together.
+
+Interview ideas
+
+   ●​ Paper 2 says engineers use soft skills without noticing them. Do managers see the
+      same, or do they notice more?
+   ●​ Paper 4 says 84% of attributes are shared between roles. Do professionals feel the roles
+      are that similar?
+   ●​ Papers 3 and 6 say unclear goals hurt teams. Who do engineers and managers each
+      blame?
+   ●​ Paper 1 says approachability matters. Do managers think they’re approachable, and do
+      engineers agree?
+

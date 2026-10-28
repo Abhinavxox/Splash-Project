@@ -1,0 +1,279 @@
+                                   Paper Summary
+
+Title: Paper 1
+Generative AI for Software Project Management: Insights from a Review of a Software
+Practitioner Literature
+
+Authors, year, where published:
+Lakshana Iruni Assalaarachchi (Monash University)
+Zainab Masood (Prince Sultan University)
+Rasgina Hoda (Monash University)
+John Grundy (Monash University)
+
+Year: 2025
+2025 IEEE “accepted on 7th October 2025”
+
+Published in: IEEE Software, a magazine/journal
+
+Type of Study:
+Grey Literature Review
+
+Who They Studied?
+They studied that software project managers mainly use GenAI as their “assistant” or a
+“friend” rather than their replacement. They use GenAI for communication, collaboration,
+performing repetitive tasks and predictive analysis for the project’s success.
+
+Main Finding
+The study found out that GenAI has started to show its ability to transform the software
+engineering field. However, for an SPM role, it is evolving alongside GenAI and is being
+used to perform routine activities. Moreover, the major concern faced by the authors is how
+GenAI is being used by software practitioners in an SPM role and the challenges faced by
+them while using the AI.
+
+Engineer vs Manager:
+Both roles need communication and collaboration, so for that ultimately managers are
+needed in both of them.
+
+Useful for us because:
+This paper gives us the evidence of how SPM use GenAI in their work and the benefits they
+get from using the AI.
+This paper also gives us an insight into the concerns of the software engineers and
+managers regarding the use of AI for their work.
+
+Connection with other papers:
+Agrees with other papers regarding success factors that influence agile software
+development project success (Nguyen), success factors as critical that shape agile projects'
+success (Nguyen), excellence practices in Scrum (Pashchenko, 2024), reliable estimates
+and Software Development, Jordanian Enterprises (2018), and Crowdsourcing in Software
+Development (Bibi et al., 2020).
+
+Interview Question Idea
+    ●​ Do you agree with the paper that says practitioners use GenAI as their assistant?
+    ●​ Do you use AI for confidential projects as well? Where do you draw the line?
+    ●​ Do you rely on the use of AI for making an important decision about the project
+       development, delivery and execution?
+    ●​ Can you share an incident where GenAI truly saved you from making a huge blunder
+       on a project?
+
+Title: Paper 2
+Success Factors that Influence Agile Software Development Project Success
+
+Author:
+Dan Schilling Nguyen, Ph.D., Mt Washington College National Online Program, Alpharetta,
+Georgia, USA (single author).
+
+Year: 2016
+
+Published in: American Scientific Research Journal for Engineering, Technology, and
+Sciences (ASRJETS), Volume 17, No. 1, pp. 172–222.
+
+Type of Study:
+Qualitative and phenomenological study
+
+Who They Studied?
+They studied the lived experiences of 10 agile software development team project managers
+and leaders from global companies in the United States.
+
+Main Finding
+The study found out that for the agile software projects to succeed, there need to be few of
+the things going in the right direction. According to the insights given by 10 agile managers,
+during the software development process, customers prefer to stay engaged in the whole
+process. This basically helps for the successful completion of the project due to the team's
+scrum-style process. Moreover, an effective product owner maximises the business value,
+sets priorities, engages stakeholders and follows good agile engineering practices for their
+software to perform properly.
+
+Engineer vs Manager:
+The technical side of the paper is described from the managers' point of view because only
+they were interviewed. As both the technical and managerial side both are equally important,
+they are interlinked.
+
+Useful for us because:
+This paper shows the gap in engineers' opinions, which will be filled once we interview them
+but for now only managers' views regarding success of agile projects were noted.
+Connection with other papers
+Connections to other papers such as Nguyen's companion paper (2016), the GenAI paper
+(2025), and the Scrum paper (Pashchenko, 2024)
+
+Quote or number worth citing
+“9/10 (90%) participants believe good agile engineering practices are key to the project's
+success. The paper also cites 2012 data of 72% success for agile vs 64% for traditional
+methods.
+
+Interview Question Idea
+    ●​ What is the most important factor for the project development, the technical aspects
+       or the managerial aspects?
+
+Title: Paper 3
+
+Success Factors as Critical That Shape Agile Software Development Project Success
+
+Author: Dan Schilling Nguyen
+
+Year: 2016
+
+Where: International Journal of Sciences: Basic and Applied Research (IJSBAR), Vol. 25,
+No. 3, pp. 20–69.
+
+Type of study: Interviews.
+
+A qualitative, phenomenological study: open-ended questions answered by email, then
+coded into themes.
+
+Who they studied: The paper studied 10 agile software development managers or leaders
+in the United States (5 in IT, 2 in manufacturing and 3 in defence). None of the engineers
+were interviewed or studied.
+
+Main Finding
+The study found out that the project will only succeed if the team communicates well with
+every layer of the hierarchy of the company and if engineering practices are closely
+implemented and monitored, the product owner maximises the product value and also if the
+sponsors fund the project.
+
+Engineer vs Manager:
+The technical side of the paper is described from the managers' point of view because only
+they were interviewed. As both the technical and managerial side both are equally important,
+they are interlinked.
+
+
+Useful for us because:
+This paper shows the gap in engineers' opinions, which will be filled once we interview them,
+but for now only managers' views regarding the success of agile projects were noted.
+Connection with other papers
+Connections to other papers such as Nguyen's companion paper (2016), the GenAI paper
+(2025), and the Scrum paper (Pashchenko, 2024).
+
+Quote or number worth citing
+“9/10 (90%) participants believe that automation helps for continuous integration of agile
+development principles, and design patterns help to reduce technical debt as well. The same
+majority pointed out that collaboration and communication skills are core success factors of
+a project.
+
+Interview question idea: “Is continuous integration of development principles more
+significant than the communication skills of the team itself?”
+
+Title: Paper 4
+
+Reliable Estimate and Software Development/Jordanian Environment
+
+Authors: Mohammad Mahmoud Tarawneh and Sattam Rakan Allahawiah (Balqa Applied
+University / Karak University College)
+
+Year: May 2018
+
+Where: International Journal of Computer Applications, Vol. 179, No. 44, pp. 10–14.
+
+Type of study: Survey (questionnaire) with follow-up interviews.
+
+Who they studied: The paper studied software project managers in Jordan. Questionnaires
+were given to 120 managers at a software company, and 20 of the managers were
+interviewed.
+
+Main Finding
+The study found out that the managers in Jordan repeatedly made the same mistakes while
+developing a project without learning from them. Furthermore, they could not allocate proper
+time and budget for a project to succeed, due to which they would always rely on past
+experience without adapting to modern tools and technologies. Due to this issue, the project
+always exceeded the timeline and budget allocation
+
+Engineer vs Manager:
+The paper focuses entirely on the manager's inability to perform well from their side during
+the project development process.
+
+Useful for us because:
+This paper shows how managers can also often struggle with their work, such as the
+estimation of numbers and their core managerial tasks.
+
+Connection with other papers
+The GenAI paper (2025) and The Nguyen papers (2016)
+Quote or number worth citing
+The usability of the system is affected by 59.70% when a project manager fails to estimate
+its cost.
+Interview question idea: what kind of tools and technologies do you use to estimate the
+cost and timeline for a project?
+What do you keep in mind to deliver the project on time?
+
+
+Title: Paper 5
+
+Excellence Practices in the Scrum Paradigm in Software Development
+
+Author: Denis Pashchenko (SlavaSoft, Spain)
+
+Year: 2025 (online Sept 2024)
+
+Where: Journal of Data Science and Intelligent Systems, Vol. 3, No. 2, pp. 79–86
+
+Type of study: Review
+
+Who they studied: The paper is based on the author's industry experience and research
+from 2020 to 2023 across Russian, European and international IT companies. So, there are
+no participants.
+
+Main Finding
+The study found out that scrum practices work well when the goals are SMART and easily
+measurable. It also goes well when all the team roles are combined with AI tools to save
+time from doing repetitive tasks. Apart from this remote work, and more digitalisation makes
+scrum rely more on communication and documentation.
+
+Engineer vs Manager:
+The paper focuses on both roles but from a manager's point of view.
+
+Useful for us because:
+This paper shows how work is divided among managers and engineers in an scrum team.
+
+Connection with other papers
+The paper is closest to the GenAI paper (2025) and agrees with the Nguyen papers (2016).
+It also connects somewhat with the Jordanian estimation paper (2018) for cost allocation and
+planning required for a project to develop. However, the paper is more about the author’s
+personal opinion itself.
+
+Quote or number worth citing
+About 20% of the team had started using AI tools, 43% planned to use it and 23% of experts
+use it regularly.
+
+Interview question idea: N/A
+Title: Paper 6
+
+Crowdsourcing in Software Development: Empirical Support for Configuring Contests
+
+Author: Stamatia Bibi, Ioannis Zozas, Apostolos Ampatzoglou, Panagiotis G. Sarigiannidis,
+George Kalampokis and Ioannis Stamelos (universities in Greece)
+
+Year: 2020
+
+Where: IEEE Access, Vol. 8, article starting at p. 58094.
+
+Type of study: case study
+
+Who they studied: The paper studied coding two contests, and participants were
+outsourced freelance developers who competed to win each of the given tasks.
+
+Main Finding
+The study found out that crowdsourcing seems to be a better way to get software
+development tasks done, even though successful completion depends a lot on task type.
+However, AI contests seem to attract more participants, but QA contests finish the fastest.
+One concern that the paper showed is that development contests have very low prizes for
+the amount of work done; due to this, managers should carefully analyse their goals and pick
+the task type.
+
+Engineer vs Manager:
+In the paper, both the roles are split into two halves. Managers organise the programme and
+decide what to crowdsource, why, when and how. On the other hand, engineers solve the
+problem.
+
+Useful for us because:
+This paper shows how managers' work affects the results with real numbers.
+
+Connection with other papers
+The paper agrees with the Jordanian estimation paper (2018) and connects to the Nguyen
+papers (2016). However, it connects loosely to the GenAI paper.
+
+Quote or number worth citing
+Design example: 60% of contests were successful across all indicators, like solution, time
+and quality.
+
+Interview question idea:
+    ●​ Have you ever outsourced or crowdsourced for a project? If yes, then how did it go?
+    ●​ Does a project perform well when the development team is outsourced?
+

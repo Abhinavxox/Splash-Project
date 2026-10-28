@@ -1,0 +1,130 @@
+paper 1
+
+title: The Current Challenges of Software Engineering in the Era of Large Language Models
+authors: Cuiyun Gao, Xing Hu, Shan Gao, Xin Xia, Zhi Jin
+year: 2024
+published in: arXiv (2412.14554)
+
+type of study: group discussion study. 24 people talked at a seminar in China in jan 2024 (17 from universities and 7 from industry like Huawei) and the authors coded what they said into themes. so its mostly researchers not managers.
+
+main finding: they found 26 challenges for using LLMs in software work across seven areas like requirements, coding, testing, code review, maintenance, security and data. the paper says LLMs help a lot but the results are not stable or fully trusted yet so humans still need to check things.
+
+about the roles: the paper is almost all about engineering tasks. it talks about developers writing code, reviewing code and testing but it barely says anything about managers. the only small link is that code review and design still need human judgement so the engineer role is shifting toward checking and guiding the AI instead of typing everything. it doesnt really compare engineers and managers so it doesnt say if the roles are similar or different.
+
+why useful: it shows how the engineer job is changing and that could change what managers have to look after too. but its weak for our exact question. it doesnt really agree or disagree with the other papers since its on a different topic.
+
+number to cite: 26 key challenges from 24 participants (p. 6 to 7)
+
+question for a professional: now that AI tools write a lot of code in industry do managers judge engineers more on reviewing and design skills than on how much code they write?
+
+keep: no. it talks about AI tools not about engineer vs manager roles.
+
+
+paper 2
+
+title: Why Does the Engineering Manager Still Exist in Agile Software Development?
+authors: Ravi Kalluri
+year: 2025
+published in: International Journal of Software Engineering and Applications (IJSEA) vol 16 no 4/5
+
+type of study: literature review. they started with 312 papers and kept 76 from 2000 to 2024 and added some example case studies like Spotify and some banks. nobody was surveyed directly. the author also says most sources are from north america and europe.
+
+main finding: agile was supposed to make managers not needed but they are still everywhere. the paper says this is because big companies need someone for coordination, compliance, budgets and career growth. the author proposes a three stage plan where the manager starts as a director then becomes a coach and finally just a consultant once the team can manage itself.
+
+about the roles: this one is very direct. it says engineers in the team handle the technical work and make day to day decisions. the manager does the stuff around them like removing blockers, talking to executives, getting money, mentoring and promotions. it says the manager needs both technical skill and people skill and that this is what makes them different from a scrum master. i found it interesting that the paper wants the manager to slowly give power to senior developers so over time the roles get closer and the team leads itself. so the roles start different and can become more similar.
+
+why useful: this is right on our question since it lists what managers do that engineers dont. it agrees with paper 6 (Agility Without Chaos) that agile doesnt remove management it just changes it.
+
+number to cite: engineering managers in three banks were linked to a 25% reduction in integration defects (p. 21)
+
+question for a professional: in the industry do agile teams actually ever become fully self managed or does the manager usually stay in control?
+
+keep: yes. it directly compares the manager role with the team and scrum roles.
+
+
+paper 3
+
+title: Working software over comprehensive documentation, Rationales of agile teams for artefacts usage
+authors: Gerard Wagenaar, Sietse Overbeek, Garm Lucassen, Sjaak Brinkkemper, Kurt Schneider
+year: 2018
+published in: Journal of Software Engineering Research and Development (Springer)
+
+type of study: multiple case study using semi structured interviews. they looked at 19 agile teams in 19 companys mostly in the Netherlands from different industries. the people interviewed were mostly product owners, scrum masters and lead developers so kind of both sides.
+
+main finding: agile teams still use lots of documents, 55 kinds in total. the paper says there are five reasons like the agile method itself, talking inside the team, testing, the team governing itself and outside pressure from users.
+
+about the roles: it shows the work passing between roles. the product owner writes user storys, a designer makes the functional design and the developer turns that into code, and documents help pass work between them. it also says teams set their own coding and architecture standards so the engineers are doing some governance that used to be a manager thing. so this one makes the roles feel a bit more similar because the team does part of the management itself.
+
+why useful: its real data from real teams about how engineers and product people coordinate. it agrees with paper 2 and paper 6 that agile teams still have structure and control even if it looks different.
+
+number to cite: 94 out of 254 artefact uses were just because of using an agile method (p. 18)
+
+question for a professional: in agile teams in general who usually decides what documentation is needed, the developers or the managers?
+
+keep: yes. it has real interview data and shows how engineers take on some self management.
+
+
+paper 4
+
+title: Continuous clarification and emergent requirements flows in open-commercial software ecosystems
+authors: Eric Knauss, Aminah Yussuf, Kelly Blincoe, Daniela Damian, Alessia Knauss
+year: 2018 (online 2016)
+published in: Requirements Engineering journal (Springer)
+
+type of study: case study with mixed methods. one researcher worked as a developer intern at IBM in Ottawa Canada for 2 months, then they did 13 interviews and looked at online project data. the 13 people were 6 developers, 1 team leader, 2 development leaders and 4 technical leaders so both engineers and managers.
+
+main finding: open communication in a big software ecosystem helps requirements get clarified just in time. but the paper says it creates tradeoffs like keeping secrets and IP safe and handling ideas coming up from the bottom.
+
+about the roles: this paper has a nice point. it found that team leads and managers take customer calls and pass priorities down in weekly meetings so developers can just focus on code. they call this the protected developer. it also says junior developers depend heavily on managers and senior people to understand the bigger picture. so here the roles are clearly different. the manager deals with outside people and priorities and the engineer deals with the build.
+
+why useful: it gives real evidence of how managers and developers split work and talk to each other. it agrees with paper 2 that managers act like a bridge between the team and the outside.
+
+quote to cite: team leads and managers basically shield their developers from ecosystem challenges (p. 106)
+
+question for a professional: is it common in industry for managers to keep developers away from customers or is it better now for developers to talk to customers directly?
+
+keep: yes. it actually interviewed both developers and leaders and shows how they split work.
+
+
+paper 5
+
+title: Incorporating software security, using developer workshops to engage product managers
+authors: Charles Weir, Ingolf Becker, Lynne Blair
+year: 2023 (online dec 2022)
+published in: Empirical Software Engineering (Springer)
+
+type of study: design based research, kind of like an experiment with workshops plus interviews. they ran workshops in eight organizations with 88 developers and also some product managers and line managers. the authors are from the UK and the companys were mostly UK software firms from 20 to 6000 staff.
+
+main finding: short workshops helped developers find security problems and convince product managers to make them a priority. the paper says it worked best for teams with less security knowledge and when the team manager ran the workshop.
+
+about the roles: this is very clear. the paper says developers often know security is needed but product managers decide the priority and the budget so security gets skipped. developers need to learn to sell security in business words that a manager cares about. so the roles are different. engineers see the technical risk and managers make the cost and priority decision, and they need to speak each others language to work together.
+
+why useful: it shows a real gap between how engineers think and how managers decide. it agrees with paper 4 that communication across roles is a big deal and with paper 2 that leaders matter for how teams behave.
+
+number to cite: six of the eight groups got better product manager engagement after the workshops (p. 27)
+
+question for a professional: in industry how do developers usually convince managers to spend time on stuff like security that the customer doesnt see?
+
+keep: yes. it studies developers and managers together and shows how decisions get split.
+
+
+paper 6
+
+title: Agility Without Chaos, Managerial Control Mechanisms in Agile Software Development Organizations
+authors: Deniz Ceylan Kurt
+year: 2024
+published in: IRE Journals (Iconic Research and Engineering Journals) vol 8 issue 1
+
+type of study: conceptual paper, not really a lit review with a method. there is no data and nobody was studied. it uses theory about control in organizations.
+
+main finding: agile doesnt remove control it changes the form. the paper says without proper control agile turns into chaos with tech debt and unclear accountability. good control means clear goals, boundaries like security or architecture rules and transparency through metrics instead of strict plans.
+
+about the roles: it says engineers get freedom to decide how to do the work inside guardrails. managers set the guardrails, explain goals and turn company priorities into context for the team. it says engineering managers translate priorities, product leaders handle market stuff and executives support the whole system. it also warns that if managers use metrics to punish people trust goes away. so roles are different but they depend on each other.
+
+why useful: it gives a simple way to explain the line between engineer freedom and manager control. it agrees with paper 2 a lot, both say managers change into facilitators and dont disappear.
+
+quote to cite: the paper says control is not the enemy of agility, misaligned control is (p. 848)
+
+question for a professional: in the industry how do managers keep track of agile teams without it feeling like micromanaging?
+
+keep: no. it has no real data and paper 2 covers the same idea better.
