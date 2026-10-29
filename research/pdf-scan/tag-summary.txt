@@ -1,0 +1,3 @@
+figure tags 7293, with alt text 237
+formula tags 6, with alt text 0
+files with any figure alt text 11 of 27
