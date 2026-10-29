@@ -90,7 +90,7 @@ New risk. Some figures we found, such as the ADA compliance dates, differ betwee
 
 **Engineering process and team**
 
-We did not keep the weekly rhythm we planned. Work happened in bursts on October 24 and 25 and on October 29. The decisions log and the repository worked well and gave us a clear record. Leaving roles open slowed us down more than expected. Weekly hours were [add hours].
+We did not keep the weekly rhythm we planned. Work happened in bursts on October 24 and 25 and on October 29. The decisions log and the repository worked well and gave us a clear record. Leaving roles open slowed us down more than expected.
 
 **Lessons learned and next steps**
 
