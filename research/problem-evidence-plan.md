@@ -2,7 +2,7 @@
 
 Goal. Show with evidence that lecture slides without meaning are a real problem for real blind and low vision students, how big it is, and why current fixes are not enough.
 
-This document is the plan only. What we actually find and read goes in `evidence-register.md`, one row per source, with the link and who checked it.
+This document is the plan only. What we actually find and read goes in `evidence-register.md`, one row per source, with the link.
 
 ## Claims we need to support
 
@@ -130,7 +130,7 @@ News (6) is shared. Anyone who finds a relevant story adds it.
 
 ## Rules
 
-- Only add a source to the register after someone has opened and read or watched it.
-- Every row has a link and the name of the person who checked it.
+- Only add a source to the register after it has been opened and read or watched.
+- Every row has a link.
 - Write what the source actually says, not what we hope it says.
 - Note sources that go against our assumptions too.
