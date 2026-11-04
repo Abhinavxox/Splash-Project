@@ -5,4 +5,4 @@ Anonymized transcripts. Participants are referred to as Professional A, B and so
 | File | Interviewer | Format | Questions |
 |---|---|---|---|
 | interview-A.md | Nishan Giri | Spoken, transcribed | 4 |
-| interview-B.md | [team member] | Written | 3 |
+| interview-B.md | Two team members | Spoken, transcribed, about 8 minutes | 8 plus 1 follow up |
