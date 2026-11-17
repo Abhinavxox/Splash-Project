@@ -8,15 +8,30 @@ Subject: Students hoping to build something useful for blind and low vision stud
 
 Hello,
 
-We are four master's students in Applied Computing at the University of Windsor. We want to build something that genuinely helps blind and low vision students learn, whether that is lecture slides, research papers, complex math, diagrams or content on braille devices.
+We are four master's students in Applied Computing at the University of Windsor: Abhinav Pandey, Shrijana Karki, Aakriti Mainali and Khemraj Adhikari. As part of our software engineering course (COMP 8117), we want to build something that genuinely helps blind and low vision students learn.
 
-Before we build anything, we want to learn from the people who know this best. Could someone from your team spare 15 to 30 minutes to talk with us? We are free [two times].
+**What we are hoping to build**
 
-If any students you support would like to share what would help them, we would be grateful to meet them too, only with their consent.
+We are looking at tools that could make learning material easier to use with screen readers and braille displays. For example, helping students get through lecture slides and PDFs, research papers and articles, complex math, graphs and diagrams, or content on braille devices like the Monarch. We have not decided what to build yet. We do not want to guess. We want it to be shaped by the people who know this best, which is why we are reaching out to you first.
 
+**What we would like to ask**
 
-Thank you,
+- Which kinds of course material are hardest for blind and low vision students to use?
+- How long does it usually take to prepare an accessible version, and which parts are done by hand?
+- What happens for students while they wait?
+- What already works well that we should not try to replace?
+- If one thing could be made easier, what would make the biggest difference?
+
+**What we are asking for**
+
+A 15 to 30 minute conversation with someone from your team, in person or online. We are free [two times], or any time that suits you this week.
+
+If any students you support would like to share their experience, we would be grateful to speak with them too, only with their consent. We will not use anyone's name without permission, and everything is used only for this course project.
+
+Thank you for considering this. Even a short conversation would help us build the right thing.
+
 Abhinav Pandey, with Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
+Master of Applied Computing, University of Windsor
 [your phone]
 
 ## 2. CNIB Windsor, St Clair College Accessibility Services, NEADS
@@ -25,12 +40,26 @@ Subject: University of Windsor students wanting to build something with the blin
 
 Hello,
 
-We are master's students at the University of Windsor. We want to build something that makes learning easier for blind and low vision students, from course material and research papers to math, diagrams and braille devices like the Monarch.
+We are four master's students in Applied Computing at the University of Windsor. For our software engineering course, we want to build something that makes learning easier for blind and low vision students.
 
-We do not want to guess what is needed. Could we have a 15 minute conversation with you, or with anyone in your community who would like to share what would help?
+**What we are hoping to build**
 
-Thank you,
-Abhinav Pandey, University of Windsor
+Something that helps students use learning material with screen readers and braille displays, such as lecture slides, PDFs, research papers, complex math, graphs, diagrams, or content on braille devices like the Monarch. We have not decided what it will be. We want the people who will use it to tell us what matters.
+
+**What we would like to ask**
+
+- What kinds of learning material cause the most trouble?
+- What do students do today to get around it?
+- What already works well?
+- If one thing could be made easier, what would it be?
+
+**What we are asking for**
+
+A 15 minute conversation with you, or an introduction to anyone in your community who would like to share their experience. Names are only used with permission, and everything stays within this course project.
+
+Thank you very much,
+Abhinav Pandey, with Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
+Master of Applied Computing, University of Windsor
 [your phone]
 
 ## 3. UWindsor instructors
