@@ -69,7 +69,7 @@ Master of Applied Computing, University of Windsor
 
 Subject: 15 minutes to help us build something for blind and low vision students
 
-Hello Professor [name],
+Hello Professor,
 
 We are master's students in Applied Computing hoping to build something that helps blind and low vision students learn from course material. Before building, we want to understand how instructors prepare and share slides and notes, and whether accessibility requests come up.
 
@@ -80,7 +80,7 @@ Abhinav Pandey, on behalf of the team
 
 ## 4. Follow up after 2 days with no reply
 
-Subject: Re: [original subject]
+Send as a reply to your first email, so the subject stays the same.
 
 Hello,
 
