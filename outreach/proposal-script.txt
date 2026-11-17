@@ -1,0 +1,13 @@
+Hello, and thank you for taking a moment to listen.
+
+We are four master's students in Applied Computing at the University of Windsor: Abhinav Pandey, Shrijana Karki, Aakriti Mainali and Khemraj Adhikari. We are working on a course project in software engineering.
+
+Our project looks at how blind and low vision university students use lecture material, such as slides, PDFs, math, graphs and diagrams. Published research and first hand accounts suggest that this material is often hard to use with screen readers and braille displays, that accessible versions can arrive late, and that students carry a lot of extra work. But we do not yet know whether this is true here, and we have not decided on any solution. We want to understand the problem first, from the people who live it and the people who support them.
+
+We are asking for about fifteen to thirty minutes of your time. You can either meet with us, in person or online, or answer a few short questions on this page.
+
+The questions ask what kinds of course material are hardest to use, how long accessible versions usually take, what happens while students wait, what part of the work is done by hand, and whether the current process works well. If it already works well, that is just as important for us to hear.
+
+Taking part is completely voluntary. You can skip any question and stop at any time. We will only use your answers for this course project. We will not publish your name unless you say we can, and you choose below whether we may quote you.
+
+Thank you for helping us understand this properly.
