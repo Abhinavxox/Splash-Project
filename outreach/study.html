@@ -49,13 +49,15 @@ textarea,select,input[type=text],input[type=email]{width:100%;box-sizing:border-
 <div class="check"><input type="checkbox" id="c3" name="c3"><label for="c3">The team may name me or my organization next to my words.</label></div>
 </div>
 
-<button type="button" id="email">Send my thoughts</button>
+<button type="button" id="save">Submit</button>
+<button type="button" id="email" class="secondary">Send by email instead</button>
 <button type="button" id="copy" class="secondary">Copy my thoughts</button>
 <p id="status" role="status" aria-live="polite"></p>
 </form>
 </main>
 <script>
 const TEAM_EMAIL = "TEAM_EMAIL_HERE";
+const SAVE_URL = "WEB_APP_URL_HERE";
 const a=document.getElementById("audio"),play=document.getElementById("play");
 play.onclick=async()=>{
  if(!a.paused){a.pause();play.textContent="Play proposal";return;}
@@ -77,4 +79,16 @@ document.getElementById("email").onclick=()=>{
 document.getElementById("copy").onclick=async()=>{
  try{await navigator.clipboard.writeText(collect());st.textContent="Answers copied. Paste them into an email to "+TEAM_EMAIL+".";}
  catch(e){st.textContent="Copy did not work. Please use Send my thoughts instead.";}};
+
+function payload(){const f=document.getElementById("f");const d={};
+ for(const el of f.querySelectorAll("textarea,select,input[type=text]"))d[el.id]=el.value.trim();
+ d.consent_use=document.getElementById("c1").checked?"yes":"no";
+ d.consent_quote=document.getElementById("c2").checked?"yes":"no";
+ d.consent_name=document.getElementById("c3").checked?"yes":"no";return d;}
+document.getElementById("save").onclick=async()=>{
+ if(!document.getElementById("c1").checked){st.textContent="Please tick the first consent box so we can use your answers.";return;}
+ st.textContent="Saving...";
+ try{await fetch(SAVE_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify(payload())});
+  st.textContent="Thank you. Your answers were sent to the team.";document.getElementById("save").disabled=true;}
+ catch(e){st.textContent="Could not send right now. Please check your internet connection, or use Send by email instead.";}};
 </script></body></html>
