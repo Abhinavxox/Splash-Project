@@ -1,34 +1,34 @@
 # Outreach emails
 
-Attach `study.html` or link to it. Replace [study link] and [your phone] before sending. Log every email in Notion, Interviews and Outreach.
+Replace [page link], [two times] and [your phone] before sending. Log every email in Notion, Interviews and Outreach.
 
-## 1. UWindsor Student Accessibility Services
+## 1. UWindsor Student Accessibility Services, sas@uwindsor.ca
 
-Subject: Student project on accessible lecture material, request for a short meeting
+Subject: Students hoping to build something useful for blind and low vision students
 
 Hello,
 
-We are four master's students in Applied Computing at the University of Windsor, working on a course project for COMP 8117 on how blind and low vision students use lecture material such as slides, PDFs, math and diagrams.
+We are four master's students in Applied Computing at the University of Windsor. We want to build something that genuinely helps blind and low vision students learn, whether that is lecture slides, research papers, complex math, diagrams or content on braille devices.
 
-Before deciding anything, we want to understand the problem from the people who support these students. Could someone from your team meet with us for 15 to 30 minutes this week? We are available [two time options].
+Before we build anything, we want to learn from the people who know this best. Could someone from your team spare 15 to 30 minutes to talk with us? We are free [two times].
 
-If a meeting is not possible, a few short written answers would help just as much: [study link]. The page can also be listened to.
+If any students you support would like to share what would help them, we would be grateful to meet them too, only with their consent.
 
-If any students you support would be willing to share their experience, we would be grateful to meet them as well, with their consent.
+If a meeting is hard to fit in, this short page explains our idea and can be listened to, with space to share thoughts: [page link]
 
 Thank you,
-Abhinav Pandey, on behalf of Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
+Abhinav Pandey, with Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
 [your phone]
 
-## 2. CNIB Windsor, St Clair College Accessibility Services, NEADS, NFB student division
+## 2. CNIB Windsor, St Clair College Accessibility Services, NEADS
 
-Subject: Short questions from university students on accessible lecture material
+Subject: University of Windsor students wanting to build something with the blind community
 
 Hello,
 
-We are master's students at the University of Windsor studying how blind and low vision students use lecture material such as slides, PDFs, math and diagrams. We have not chosen any solution. We first want to understand what actually gets in the way.
+We are master's students at the University of Windsor. We want to build something that makes learning easier for blind and low vision students, from course material and research papers to math, diagrams and braille devices like the Monarch.
 
-Could you spare 15 minutes for a short call, or answer a few questions here: [study link]? If you could share this with students who might be willing to talk to us, that would help a great deal.
+We do not want to guess what is needed. Could we have a 15 minute conversation with you, or with anyone in your community who would like to share what would help? Our short page, which can also be listened to, is here: [page link]
 
 Thank you,
 Abhinav Pandey, University of Windsor
@@ -36,13 +36,13 @@ Abhinav Pandey, University of Windsor
 
 ## 3. UWindsor instructors
 
-Subject: 15 minutes on how you share lecture material
+Subject: 15 minutes to help us build something for blind and low vision students
 
 Hello Professor [name],
 
-We are master's students in Applied Computing working on a COMP 8117 project about how course material reaches blind and low vision students. We would value 15 minutes of your time to hear how you prepare and share slides and notes, and whether accessibility requests come up.
+We are master's students in Applied Computing hoping to build something that helps blind and low vision students learn from course material. Before building, we want to understand how instructors prepare and share slides and notes, and whether accessibility requests come up.
 
-Would [two time options] work? If not, a few written answers would also help: [study link].
+Could you spare 15 minutes on [two times]? If not, our short page is here: [page link]
 
 Thank you,
 Abhinav Pandey, on behalf of the team
@@ -53,6 +53,6 @@ Subject: Re: [original subject]
 
 Hello,
 
-Following up on our message below in case it got buried. Even a short written reply at [study link] would help us a lot. Thank you.
+Following up in case our message got buried. Even a few lines on [page link] would help us build the right thing. Thank you.
 
 Abhinav Pandey
