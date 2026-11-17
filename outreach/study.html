@@ -58,17 +58,13 @@ textarea,select,input[type=text],input[type=email]{width:100%;box-sizing:border-
 <script>
 const TEAM_EMAIL = "TEAM_EMAIL_HERE";
 const a=document.getElementById("audio"),play=document.getElementById("play");
-let speaking=false;
-const text=[...document.querySelectorAll("main > p, main h2")].slice(0,12).map(e=>e.textContent).join(" ");
-function speak(){if(!("speechSynthesis" in window))return false;const u=new SpeechSynthesisUtterance(text);u.rate=0.95;u.onend=()=>{speaking=false;play.textContent="Play proposal";};speechSynthesis.speak(u);speaking=true;play.textContent="Pause";return true;}
 play.onclick=async()=>{
- if(speaking){speechSynthesis.cancel();speaking=false;play.textContent="Play proposal";return;}
  if(!a.paused){a.pause();play.textContent="Play proposal";return;}
  try{await a.play();play.textContent="Pause";}
- catch(e){if(!speak())alert("Audio could not play in this viewer. Please open the page in Chrome, Edge or Safari.");}
+ catch(e){document.getElementById("status").textContent="Audio could not play here. Please open this page in Chrome, Edge or Safari.";}
 };
 a.onended=()=>play.textContent="Play proposal";
-document.getElementById("stop").onclick=()=>{a.pause();a.currentTime=0;if(speaking){speechSynthesis.cancel();speaking=false;}play.textContent="Play proposal";};
+document.getElementById("stop").onclick=()=>{a.pause();a.currentTime=0;play.textContent="Play proposal";};
 function collect(){
  const f=document.getElementById("f");let out=[];
  for(const el of f.querySelectorAll("textarea,select,input[type=text]")){const l=f.querySelector(`label[for="${el.id}"]`);if(el.value.trim())out.push(l.textContent+"\n"+el.value.trim()+"\n");}
