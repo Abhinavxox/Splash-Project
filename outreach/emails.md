@@ -1,6 +1,6 @@
 # Outreach emails
 
-Replace [page link], [two times] and [your phone] before sending. Log every email in Notion, Interviews and Outreach.
+Replace [two times] and [your phone] before sending. CC on every email: Shrijana Karki, Aakriti Mainali and Khemraj Adhikari (their UWindsor emails). Log every email in Notion, Interviews and Outreach.
 
 ## 1. UWindsor Student Accessibility Services, sas@uwindsor.ca
 
@@ -14,7 +14,6 @@ Before we build anything, we want to learn from the people who know this best. C
 
 If any students you support would like to share what would help them, we would be grateful to meet them too, only with their consent.
 
-If a meeting is hard to fit in, this short page explains our idea and can be listened to, with space to share thoughts: [page link]
 
 Thank you,
 Abhinav Pandey, with Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
@@ -28,7 +27,7 @@ Hello,
 
 We are master's students at the University of Windsor. We want to build something that makes learning easier for blind and low vision students, from course material and research papers to math, diagrams and braille devices like the Monarch.
 
-We do not want to guess what is needed. Could we have a 15 minute conversation with you, or with anyone in your community who would like to share what would help? Our short page, which can also be listened to, is here: [page link]
+We do not want to guess what is needed. Could we have a 15 minute conversation with you, or with anyone in your community who would like to share what would help?
 
 Thank you,
 Abhinav Pandey, University of Windsor
@@ -42,7 +41,7 @@ Hello Professor [name],
 
 We are master's students in Applied Computing hoping to build something that helps blind and low vision students learn from course material. Before building, we want to understand how instructors prepare and share slides and notes, and whether accessibility requests come up.
 
-Could you spare 15 minutes on [two times]? If not, our short page is here: [page link]
+Could you spare 15 minutes on [two times]? If those do not work, any time this week suits us.
 
 Thank you,
 Abhinav Pandey, on behalf of the team
@@ -53,6 +52,6 @@ Subject: Re: [original subject]
 
 Hello,
 
-Following up in case our message got buried. Even a few lines on [page link] would help us build the right thing. Thank you.
+Following up in case our message got buried. Even a short call or a few lines by reply would help us build the right thing. Thank you.
 
 Abhinav Pandey
