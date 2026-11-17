@@ -1,6 +1,6 @@
 # Outreach emails
 
-Replace [two times] and [your phone] before sending. CC on every email: Shrijana Karki, Aakriti Mainali and Khemraj Adhikari (their UWindsor emails). Log every email in Notion, Interviews and Outreach.
+CC on every email: Shrijana Karki, Aakriti Mainali and Khemraj Adhikari (their UWindsor emails). Log every email in Notion, Interviews and Outreach.
 
 ## 1. UWindsor Student Accessibility Services, sas@uwindsor.ca
 
@@ -24,15 +24,18 @@ We are looking at tools that could make learning material easier to use with scr
 
 **What we are asking for**
 
-A 15 to 30 minute conversation with someone from your team, in person or online. We are free [two times], or any time that suits you this week.
+A 15 to 30 minute conversation with someone from your team, in person or online. We are happy to meet at any time that suits you this week.
 
 If any students you support would like to share their experience, we would be grateful to speak with them too, only with their consent. We will not use anyone's name without permission, and everything is used only for this course project.
+
+If a meeting is hard to fit in, you or your students can answer the same questions on this short page instead: https://abhinavxox.github.io/accessibility-study/
+The page works with screen readers, can be listened to with a play button, and your answers are saved directly to our team's responses when you press Submit.
 
 Thank you for considering this. Even a short conversation would help us build the right thing.
 
 Abhinav Pandey, with Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
 Master of Applied Computing, University of Windsor
-[your phone]
++1 (519) 551 6427
 
 ## 2. CNIB Windsor, St Clair College Accessibility Services, NEADS
 
@@ -55,12 +58,12 @@ Something that helps students use learning material with screen readers and brai
 
 **What we are asking for**
 
-A 15 minute conversation with you, or an introduction to anyone in your community who would like to share their experience. Names are only used with permission, and everything stays within this course project.
+A 15 minute conversation with you, or an introduction to anyone in your community who would like to share their experience. They can also answer on this short page, which works with screen readers and can be listened to: https://abhinavxox.github.io/accessibility-study/ Names are only used with permission, and everything stays within this course project.
 
 Thank you very much,
 Abhinav Pandey, with Shrijana Karki, Aakriti Mainali and Khemraj Adhikari
 Master of Applied Computing, University of Windsor
-[your phone]
++1 (519) 551 6427
 
 ## 3. UWindsor instructors
 
@@ -70,7 +73,7 @@ Hello Professor [name],
 
 We are master's students in Applied Computing hoping to build something that helps blind and low vision students learn from course material. Before building, we want to understand how instructors prepare and share slides and notes, and whether accessibility requests come up.
 
-Could you spare 15 minutes on [two times]? If those do not work, any time this week suits us.
+Could you spare 15 minutes at any time that suits you this week?
 
 Thank you,
 Abhinav Pandey, on behalf of the team

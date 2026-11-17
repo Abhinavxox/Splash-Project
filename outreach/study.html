@@ -43,20 +43,18 @@ textarea,select,input[type=text],input[type=email]{width:100%;box-sizing:border-
 
 <h2>Consent</h2>
 <div class="box">
-<p>Taking part is voluntary. You can skip any question and withdraw at any time by emailing us, and we will delete your answers. Your answers are used only for this University of Windsor course project, including our report and final presentation. We will not share your name unless you allow it below.</p>
+<p>Taking part is voluntary. You can skip any question and withdraw at any time by contacting Abhinav Pandey at +1 (519) 551 6427, and we will delete your answers. Your answers are used only for this University of Windsor course project, including our report and final presentation. We will not share your name unless you allow it below.</p>
 <div class="check"><input type="checkbox" id="c1" name="c1"><label for="c1">I agree that the team may use my answers for this course project.</label></div>
 <div class="check"><input type="checkbox" id="c2" name="c2"><label for="c2">The team may quote my words in the report and presentation without my name.</label></div>
 <div class="check"><input type="checkbox" id="c3" name="c3"><label for="c3">The team may name me or my organization next to my words.</label></div>
 </div>
 
 <button type="button" id="save">Submit</button>
-<button type="button" id="email" class="secondary">Send by email instead</button>
-<button type="button" id="copy" class="secondary">Copy my thoughts</button>
+
 <p id="status" role="status" aria-live="polite"></p>
 </form>
 </main>
 <script>
-const TEAM_EMAIL = "TEAM_EMAIL_HERE";
 const SAVE_URL = "https://script.google.com/macros/s/AKfycbx2SNkb4kY8LA0BKv06y9hpEUot1bJW8H3IVeYLEanRARK52_fD9WJMWgyePdx9Rp9ITg/exec";
 const a=document.getElementById("audio"),play=document.getElementById("play");
 play.onclick=async()=>{
@@ -72,13 +70,6 @@ function collect(){
  for(const c of f.querySelectorAll("input[type=checkbox]")){const l=f.querySelector(`label[for="${c.id}"]`);out.push((c.checked?"[x] ":"[ ] ")+l.textContent);}
  return out.join("\n");}
 const st=document.getElementById("status");
-document.getElementById("email").onclick=()=>{
- if(!document.getElementById("c1").checked){st.textContent="Please tick the first consent box so we can use your answers.";return;}
- location.href="mailto:"+TEAM_EMAIL+"?subject="+encodeURIComponent("Accessible learning material study, answers")+"&body="+encodeURIComponent(collect());
- st.textContent="Your email app should open with your answers. Press send there.";};
-document.getElementById("copy").onclick=async()=>{
- try{await navigator.clipboard.writeText(collect());st.textContent="Answers copied. Paste them into an email to "+TEAM_EMAIL+".";}
- catch(e){st.textContent="Copy did not work. Please use Send my thoughts instead.";}};
 
 function payload(){const f=document.getElementById("f");const d={};
  for(const el of f.querySelectorAll("textarea,select,input[type=text]"))d[el.id]=el.value.trim();
@@ -90,5 +81,5 @@ document.getElementById("save").onclick=async()=>{
  st.textContent="Saving...";
  try{await fetch(SAVE_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify(payload())});
   st.textContent="Thank you. Your answers were sent to the team.";document.getElementById("save").disabled=true;}
- catch(e){st.textContent="Could not send right now. Please check your internet connection, or use Send by email instead.";}};
+ catch(e){st.textContent="Could not send right now. Please check your internet connection, or call us at +1 (519) 551 6427.";}};
 </script></body></html>
