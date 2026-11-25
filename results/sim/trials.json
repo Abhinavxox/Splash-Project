@@ -1,0 +1,1936 @@
+[
+  {
+    "persona": "A",
+    "variant": "P0",
+    "page": 22,
+    "score": 0.25,
+    "scores": [
+      0.5,
+      0.5,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have how many images are shown because images are skipped in untagged PDFs, though the text lists five labels: deer, bird, plane, cat, and car.",
+      "I can't tell from what I have what the query image is or why it is marked; the text layer only shows a question mark '?' and 'query data'.",
+      "I can't tell from what I have because the text only says 'Distance Metric' without giving any formula, inputs, or output values.",
+      "I can't tell from what I have because the text layer does not describe how the Nearest Neighbor classifier works or decides labels."
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged, meaning images and visual diagrams of data points were completely skipped by my screen reader.",
+      "The text layer is unhelpful and fragmented, listing isolated labels like '?' and category names without visual context or layout.",
+      "Core mathematical details for the distance metric and classifier logic are missing from the text layer."
+    ],
+    "what_worked": [
+      "NVDA successfully extracted the available plain text layer, titles, and lecture header/footer metadata."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P0",
+    "page": 23,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have.",
+      "I can't tell from what I have.",
+      "I can't tell from what I have.",
+      "I can't tell from what I have."
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged, so all the visual grid figures and image comparison calculations were completely skipped by NVDA.",
+      "I only got the slide title, a random word 'add', and footer metadata, leaving out all actual educational content."
+    ],
+    "what_worked": [
+      "The small amount of available text (slide title and authors) was read aloud without issues."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P0",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "f(x,W) = W x + b",
+      "3072 numbers total, because it comes from an array of 32x32x3 numbers.",
+      "10x3072",
+      "10 numbers giving class scores."
+    ],
+    "effort": 3,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The PDF is untagged so the diagram/image was completely skipped.",
+      "The text elements are fragmented and read out of spatial order, forcing me to piece together which dimensions belong to which matrices."
+    ],
+    "what_worked": [
+      "The formula and explicit dimension labels like 10x3072 and 32x32x3 were included in the raw text layer, making it possible to deduce the answers."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P1",
+    "page": 22,
+    "score": 0.75,
+    "scores": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "There are 5 labelled training images shown: deer, bird, plane, cat, and car.",
+      "The query image is an unlabelled image of a cat. It is marked with a question mark above it to indicate that its class/label is unknown.",
+      "The distance metric takes a query image and a training image as input and returns a real number (a distance score in \\mathbb{R}).",
+      "I can't tell from what I have; the provided text explains that it compares the query image against each training image using a distance metric to identify the closest neighbor, but it does not explicitly state the final decision rule for assigning the label."
+    ],
+    "effort": 2,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The slide content relies heavily on visual diagrams of images and layout arrows, requiring extensive descriptive text summaries."
+    ],
+    "what_worked": [
+      "The provided text description broke down the image labels and included LaTeX for the distance metric formula, making it easy for NVDA to read."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P1",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The final L1 distance score between the two images in the example is 456.",
+      "The top left cell value of the test image is 56, and for the training image it is 10.",
+      "Each cell of the third grid is computed by taking the absolute value of the difference between the corresponding cell of the test image and the training image, as in $|I_1^p - I_2^p|$.",
+      "Each grid is a 4x4 matrix."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Visual slides showing matrix arithmetic visually can be a nightmare without text descriptions, though fortunately this slide's content was provided in structured text tables."
+    ],
+    "what_worked": [
+      "The inclusion of clear row-by-row table representations of the 4x4 grids and standard LaTeX formula markup made it straightforward to follow with NVDA."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P1",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The linear classifier is defined by the equation f(x, W) = W x + b.",
+      "3072 numbers make up the input image because it is a 32x32 image with 3 color channels (32x32x3 = 3072).",
+      "The dimensions of the weight matrix W are 10x3072.",
+      "The output of f represents 10 numerical values giving class scores for each of 10 target classes."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Visual cues like 'purple-boxed vector' are meaningless to me as someone born blind."
+    ],
+    "what_worked": [
+      "The provided text headings explicitly broke down the formula, matrix dimensions, and logical relationships between the inputs and outputs."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P2",
+    "page": 22,
+    "score": 0.375,
+    "scores": [
+      0.5,
+      0.5,
+      0.5,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have how many images are shown, though five text labels are listed: deer, bird, plane, cat, and car.",
+      "I can't tell from what I have what the query image depicts or why it is marked beyond having a question mark.",
+      "It takes a query image and training images as input, and returns a real number representing their dissimilarity.",
+      "I can't tell from what I have."
+    ],
+    "effort": 4,
+    "confidence": 3,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The slide relies on visual diagrams and unlabelled images that NVDA just reads as loose words like 'deer', 'bird', and '?'.",
+      "The text does not explain the decision rule for the Nearest Neighbor classifier, leaving out crucial context about how the classification actually works."
+    ],
+    "what_worked": [
+      "The summary overview explicitly described what the distance metric inputs and outputs."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P2",
+    "page": 23,
+    "score": 0.25,
+    "scores": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have.",
+      "I can't tell from what I have.",
+      "By taking the pixel-by-pixel absolute difference between the corresponding cells of the test image and the training image.",
+      "I can't tell from what I have."
+    ],
+    "effort": 5,
+    "confidence": 2,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The actual grid values, matrix dimensions, formula, and final calculated L1 distance score are missing entirely from the text stream.",
+      "The screen reader text only contains slide metadata and a high-level summary overview, omitting the actual visual diagram content."
+    ],
+    "what_worked": [
+      "The overview summary explicitly stated that the metric uses pixel-by-pixel absolute differences between the test and training images."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P2",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The linear classifier is defined by the equation f(x,W) = W x + b.",
+      "3072 numbers make up the input image because it is an array of 32x32x3 numbers.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Dimension annotations like '3072x1', '10x1', and '10x3072' appear as disconnected text blocks in the screen reader stream rather than being structurally linked to their respective vectors and matrices."
+    ],
+    "what_worked": [
+      "The core formula f(x,W) = W x + b is present in plain text.",
+      "Text explanations explicitly specified 'Array of 32x32x3 numbers (3072 numbers total)' and '10 numbers giving class scores'."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P3",
+    "page": 22,
+    "score": 0.625,
+    "scores": [
+      0.5,
+      0.5,
+      1,
+      0.5
+    ],
+    "followups": [
+      {
+        "q": "What is the specific mathematical formula or LaTeX expression for the distance metric mentioned on this slide?",
+        "a": "There is no explicit mathematical formula (such as L1 or L2 distance) given on this slide. The slide represents the Distance Metric conceptually as taking two images inside vertical bars and mapping to the real numbers, written with the symbol \\mathbb{R} (| image1, image2 | \\rightarrow \\mathbb{R})."
+      },
+      {
+        "q": "How are the training data and query data represented numerically in code or math beyond just labels like deer or cat?",
+        "a": "The slide does not specify how the images are internally formatted as numerical data; it only shows that a Distance Metric takes a pair of images and maps them to a real number, represented by the symbol R (\u211d)."
+      },
+      {
+        "q": "What is the exact decision rule for assigning a predicted label to the query data once the distance metric outputs the dissimilarity values?",
+        "a": "The slide does not explicitly state a text formula for the decision rule, but it shows using a distance metric to compare the query data against labeled training data to find its nearest neighbor."
+      }
+    ],
+    "answers": [
+      "The text lists 5 labels (deer, bird, plane, cat, car), but I can't tell the exact total number of training images from what I have.",
+      "The query image is marked as 'query data' with a question mark ('?') to indicate it is an unlabelled image, but I can't tell what the image actually depicts from the text.",
+      "It takes a pair of images as input and returns a real number (denoted by \\mathbb{R}) representing dissimilarity.",
+      "It compares the query image against the labelled training images using the distance metric to identify the nearest neighbor, though the exact mathematical decision rule is not explicitly stated in the text."
+    ],
+    "effort": 3,
+    "confidence": 4,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The slide relies heavily on visual images for the dataset examples without providing text descriptions for a screen reader.",
+      "Spatial relationships and structural layout (like mapping the query to training samples) are completely lost in the linear text dump of words like 'deer' and '?'."
+    ],
+    "what_worked": [
+      "The follow-up Q&A context provided clear LaTeX math notation (\\mathbb{R}) and summarized the input-output behavior of the distance metric."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P3",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "What is the actual LaTeX formula for the L1 distance metric, since the slide text only says 'L1 distance:' without giving the mathematical expression?",
+        "a": "The slide actually provides the formula next to L1 distance: d_1(I_1, I_2) = \\sum_p |I_1^p - I_2^p|."
+      },
+      {
+        "q": "What are the specific pixel values and matrix dimensions for the test image, training image, and difference matrix in the worked example?",
+        "a": "All three matrices have dimensions of 4 rows by 4 columns (4x4).\n\nTest image matrix values:\nRow 1: 56, 32, 10, 18\nRow 2: 90, 23, 128, 133\nRow 3: 24, 26, 178, 200\nRow 4: 2, 0, 255, 220\n\nTraining image matrix values:\nRow 1: 10, 20, 24, 17\nRow 2: 8, 10, 89, 100\nRow 3: 12, 16, 178, 170\nRow 4: 4, 32, 233, 112\n\nDifference matrix (pixel-wise absolute differences) values:\nRow 1: 46, 12, 14, 1\nRow 2: 82, 13, 39, 33\nRow 3: 12, 10, 0, 30\nRow 4: 2, 32, 22, 108"
+      },
+      {
+        "q": "What is the word 'add' doing by itself in the text stream\u2014is it a label on a diagram or part of an operation?",
+        "a": "The word 'add' indicates an operation, showing that all the pixel-wise absolute value differences in the grid are added together to get the final total of 456."
+      }
+    ],
+    "answers": [
+      "1. The L1 distance between the two images in the example is 456.",
+      "2. The top left cell (Row 1, Column 1) of the test image is 56, and of the training image is 10.",
+      "3. Each cell of the third grid is computed as the pixel-wise absolute difference between the corresponding cells of the test image and the training image, $|I_1^p - I_2^p|$.",
+      "4. Each grid is 4x4 (4 rows by 4 columns)."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The original slide text extracted by OCR was completely unhelpful, only showing 'L1 distance:' and 'add' while omitting the formula and the entire visual grid of matrix numbers."
+    ],
+    "what_worked": [
+      "The provided Q&A clarifications converted the matrix visual diagrams into clear row-by-row numbers and provided the explicit LaTeX formula, allowing me to fully understand the calculations."
+    ]
+  },
+  {
+    "persona": "A",
+    "variant": "P3",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "The screen reader reads dimensions like 3072x1, 10x3072, and 10x1 as unattached fragments. Which specific term in the equation f(x, W) = W x + b corresponds to each set of dimensions?",
+        "a": "In the linear classifier equation f(x, W) = W x + b, the dimensions correspond to: W is 10x3072, x is 3072x1, b is 10x1, and the output f(x, W) is 10x1."
+      },
+      {
+        "q": "My screen reader just announces 'Image' without any description. What is visually shown in that image element?",
+        "a": "The image element shows a photo of a cat, which represents an input array of 32 by 32 by 3 numbers."
+      },
+      {
+        "q": "Does the slide give any concrete examples of the 10 classes being scored, or does it only mention '10 numbers giving class scores'?",
+        "a": "The slide does not give any concrete examples of the 10 classes; it only mentions '10 numbers giving class scores'."
+      }
+    ],
+    "answers": [
+      "The linear classifier is defined by the equation f(x,W) = W x + b.",
+      "The input image consists of 3072 numbers total because it is an array of dimensions 32x32x3.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Spatial spatial dimensions like 10x3072 and 3072x1 are dumped into the text stream as detached fragments without structural labeling connecting them to W or x.",
+      "The slide relies on an image element labeled simply as 'Image' without alt text, requiring prior follow-up Q&A to know what it depicts."
+    ],
+    "what_worked": [
+      "The mathematical formula f(x,W) = W x + b is stated clearly as text.",
+      "The follow-up Q&A directly mapped the floating dimension fragments to their corresponding matrix/vector variables."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P0",
+    "page": 22,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have.",
+      "I can't tell from what I have.",
+      "I can't tell from what I have.",
+      "I can't tell from what I have."
+    ],
+    "effort": 4,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged, so all visual elements and images were completely skipped by VoiceOver.",
+      "The text readout is just a jumble of isolated words like '?', 'deer', 'query data', and 'Distance Metric' without any diagram structure or explanatory text."
+    ],
+    "what_worked": [
+      "VoiceOver read the text layer that was present, including the slide title and categories."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P0",
+    "page": 23,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have"
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged, so VoiceOver skipped all the visual diagrams, matrices, and image examples.",
+      "I remember what image grid diagrams look like from when I had sight, but without alt text or tagged elements I can't access any of the data."
+    ],
+    "what_worked": [
+      "VoiceOver was able to read the basic text layer like the title, author names, and slide metadata."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P0",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "f(x,W) = W x + b",
+      "3072 numbers total, because it is an array of 32x32x3 numbers.",
+      "10x3072",
+      "10 numbers giving class scores."
+    ],
+    "effort": 3,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The PDF is untagged, so images are skipped and dimension labels like 10x3072 and 3072x1 are read out of sequence.",
+      "Without spatial layout, I have to mentally reconstruct which matrix or vector each dimension label belongs to."
+    ],
+    "what_worked": [
+      "The text layer contained the main formula f(x,W) = W x + b as well as explicit labels like '3072 numbers total' and 'class scores'."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P1",
+    "page": 22,
+    "score": 0.75,
+    "scores": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "There are 5 labelled training images shown: deer, bird, plane, cat, and car.",
+      " reached as a cat image, marked with a question mark because it is unlabelled.",
+      "The distance metric takes a query image and a training image as inputs, and returns a real-valued distance score in R.",
+      "I can't tell from what I have."
+    ],
+    "effort": 3,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Sifting through long descriptions to figure out how visual diagrams map to the concepts takes extra time with VoiceOver.",
+      "The description explains finding the closest neighbor via a distance score, but doesn't explicitly detail the final label assignment rule."
+    ],
+    "what_worked": [
+      "Having clear headings like Parts, Overview, and Formulas made navigating the content with VoiceOver much faster.",
+      "The math and structural relationship descriptions provided enough detail to understand the distance metric function."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P1",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The final L1 distance score is 456.",
+      "The top left cell of the test image is 56, and the top left cell of the training image is 10.",
+      "Each cell in the third grid is computed by taking the absolute difference between the corresponding pixel values of the test image and training image.",
+      "Each grid is 4x4."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Listening through long structural descriptions and text tables sequentially takes time with VoiceOver."
+    ],
+    "what_worked": [
+      "The provided text contained explicit descriptions of the tables, formulas, and step-by-step calculations, making it very easy to find the exact numbers without needing visual assistance."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P1",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "f(x,W) = W x + b",
+      "3072 numbers total, because it is a 32x32 color image with 3 channels.",
+      "10x3072",
+      "10 numerical values representing scores for each of 10 target classes."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The initial unformatted slide text at the top was disjointed, requiring me to move down to the structured section to make complete sense of it."
+    ],
+    "what_worked": [
+      "The detailed breakdowns under headings like 'Parts' and 'Formulas' provided precise dimensions and explanation for each variable."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P2",
+    "page": 22,
+    "score": 0.5,
+    "scores": [
+      0.5,
+      0.5,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have how many labelled training images are shown, though the text lists five labels: deer, bird, plane, cat, and car.",
+      "I can't tell from what I have what the query image actually depicts; the text only mentions 'query data' marked with a question mark and describes it as an unlabelled query image.",
+      "The distance metric takes a query image and training images as input to evaluate dissimilarity, and it outputs a real number.",
+      "I can't tell from what I have, as the provided text does not explain the decision rule for assigning the final label to the query."
+    ],
+    "effort": 4,
+    "confidence": 2,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The text is read out as a disjointed list of labels and fragments without describing the layout of the visual diagram.",
+      "I can't see the visual images or know how many examples are actually shown on screen.",
+      "Key algorithm details like the classification rule are missing from the screen reader text."
+    ],
+    "what_worked": [
+      "The brief overview text clearly stated what the distance metric inputs and outputs."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P2",
+    "page": 23,
+    "score": 0.25,
+    "scores": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "It is computed by taking the pixel-by-pixel absolute difference between the test image and the training image.",
+      "I can't tell from what I have"
+    ],
+    "effort": 4,
+    "confidence": 2,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The slide has a visual worked example with grids, but VoiceOver only reads the slide header and metadata, skipping all the actual numbers in the grids.",
+      "The overview summary mentions that pixel-by-pixel absolute differences are summed to produce a score, but it doesn't give the actual values or dimensions of the grids."
+    ],
+    "what_worked": [
+      "The overview provided a clear conceptual explanation of how the cell values in the third grid are calculated."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P2",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The linear classifier is defined by the equation f(x,W) = W x + b.",
+      "3072 numbers total, because it is described as an array of 32x32x3 numbers.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 3,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The layout snippet text is fragmented, listing dimensions like 10x1, 10x3072, and 3072x1 separately from the visual diagram, forcing me to figure out which dimension goes with which component."
+    ],
+    "what_worked": [
+      "The slide text explicitly states the equation, the input dimensions (32x32x3 = 3072), the dimensions of matrix W, and clearly labels what the output represents."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P3",
+    "page": 22,
+    "score": 0.75,
+    "scores": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "followups": [
+      {
+        "q": "What actual image is being used as the query data labeled with the question mark?",
+        "a": "An image of a cat."
+      },
+      {
+        "q": "How are the training data images and their labels visually arranged on the slide?",
+        "a": "The labels are placed directly above each of the five training images, which are arranged horizontally in a single row."
+      },
+      {
+        "q": "Does the slide give a specific mathematical formula or numerical output for the distance metric?",
+        "a": "No, the slide does not give a specific mathematical formula or numerical output. It only shows a general notation mapping two images to the set of real numbers."
+      }
+    ],
+    "answers": [
+      "There are 5 labelled training images shown, and their labels are deer, bird, plane, cat, and car.",
+      "The query image is an image of a cat, and it is marked with a question mark because it is an unlabelled query image.",
+      "The distance metric takes two images as input and returns a real number evaluating their dissimilarity.",
+      "I can't tell from what I have."
+    ],
+    "effort": 3,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The raw slide text read by VoiceOver was just a disjointed list of words, making it hard to understand what was a label versus an image label.",
+      "The slide doesn't actually spell out the decision rule for how Nearest Neighbor selects the final label, so I can't be sure without guessing."
+    ],
+    "what_worked": [
+      "The image description heading and follow-up Q&A provided clear context about the visual layout and identified the cat image as the unlabelled query."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P3",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "VoiceOver just read the word 'add' where the math should be. What is the actual mathematical formula for L1 distance shown on the slide?",
+        "a": "The formula for L1 distance is d1(I1, I2) = sum over p of |I1^p - I2^p|, which is the sum of the absolute differences between the pixel values of the two images."
+      },
+      {
+        "q": "The summary mentions a worked example comparing pixel grids of a test image and a training image. What are the specific pixel values and step-by-step calculations in that visual example?",
+        "a": "The worked example calculates the L1 distance between two 4x4 image grids. First, it subtracts the training image grid from the test image grid, then takes the absolute value of each difference, and finally sums all absolute differences to get a total distance of 456. Test image values by row: Row 1: 56, 32, 10, 18; Row 2: 90, 23, 128, 133; Row 3: 24, 26, 178, 200; Row 4: 2, 0, 255, 220. Training image values by row: Row 1: 10, 20, 24, 17; Row 2: 8, 10, 89, 100; Row 3: 12, 16, 178, 170; Row 4: 4, 32, 233, 112. Absolute difference grid values by row: Row 1: 46, 12, 14, 1; Row 2: 82, 13, 39, 33; Row 3: 12, 10, 0, 30; Row 4: 2, 32, 22, 108. Summing all 16 difference values yields 456."
+      },
+      {
+        "q": "What is the final scalar distance score produced at the end of the worked example?",
+        "a": "The final scalar distance score produced at the end of the worked example is 456."
+      }
+    ],
+    "answers": [
+      "The L1 distance between the two images in the example is 456.",
+      "The top left cell value is 56 for the test image and 10 for the training image.",
+      "Each cell of the third grid is computed by taking the absolute difference between the corresponding pixel values of the test image and the training image.",
+      "Each grid is 4x4 (4 rows by 4 columns)."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The slide text just said 'add' where the math formula was supposed to be, which VoiceOver completely mangles.",
+      "Relying on follow-up descriptions to understand visual grids that weren't accessible on the slide itself."
+    ],
+    "what_worked": [
+      "The follow-up text clearly broke down the 4x4 grid row-by-row and explained the step-by-step calculations."
+    ]
+  },
+  {
+    "persona": "B",
+    "variant": "P3",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "VoiceOver just lists dimensions like '3072x1', '10x1', and '10x3072' out of context\u2014could you clarify which dimensions match which variables like W, x, and b in the diagram?",
+        "a": "In the diagram, the variable W has dimensions 10x3072, the variable x has dimensions 3072x1, the bias vector b has dimensions 10x1, and the resulting function output f(x,W) has dimensions 10x1."
+      },
+      {
+        "q": "Is the bias term b visually represented or given explicit dimensions in the diagram, or is it just in the equation text?",
+        "a": "In the slide, the bias term b is given explicit dimensions of 10x1 next to it in the equation line, but it is not shown in the flow diagram below."
+      },
+      {
+        "q": "Does the diagram show a specific example image and specific output class names, or is it completely generic/abstract?",
+        "a": "The diagram shows a specific example image (a photo of a cat), but it does not list specific output class names; it only describes the output generically as ten numbers giving class scores."
+      }
+    ],
+    "answers": [
+      "The equation defining the linear classifier is f(x,W) = W x + b.",
+      "3072 numbers total, because the input image is an array of 32x32x3 numbers.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "VoiceOver read dimension strings like 10x3072 completely out of context initially.",
+      "The visual flow diagram omits the bias term b entirely despite including it in the equation text."
+    ],
+    "what_worked": [
+      "The follow-up questions clarified which matrix dimensions paired with which variables.",
+      "The slide text clearly provided the formula and the arithmetic for the input array (32x32x3 = 3072)."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P0",
+    "page": 22,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have. The text lists labels (deer, bird, plane, cat, car), but because the PDF is untagged, images were skipped so I cannot see or count them.",
+      "I can't tell from what I have. The screen reader text only shows '?' and 'query data' without describing what the image actually is or why it is marked.",
+      "I can't tell from what I have. The text only mentions 'Distance Metric' without giving any details about inputs or outputs.",
+      "I can't tell from what I have. The text lists 'First classifier: Nearest Neighbor' but provides no explanation of how the classifier decides the label."
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged, causing all visual diagrams and images to be completely skipped by the screen reader.",
+      "The text extracted is fragmented and missing all explanations, making it impossible to learn the concepts from the slide."
+    ],
+    "what_worked": [
+      "The screen reader was able to read the raw text labels that were embedded in the PDF layer."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P0",
+    "page": 23,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have"
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged, so all image grids and numeric examples were completely skipped by my screen reader.",
+      "I am unable to access the mathematical examples needed for class because visual content lacks alt text or visual tags."
+    ],
+    "what_worked": [
+      "The screen reader correctly read the slide title, 'L1 distance', and author metadata."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P0",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "f(x,W) = W x + b",
+      "3072 numbers, because the image is an array of 32x32x3 numbers.",
+      "10x3072",
+      "10 numbers giving class scores"
+    ],
+    "effort": 3,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The untagged PDF dumped text and dimension labels like 10x1 and 10x3072 into fragmented lines without proper structure.",
+      "Diagram images were skipped by the screen reader, requiring me to piece together the math from disjointed text lines."
+    ],
+    "what_worked": [
+      "The text layer preserved the essential formula, array counts, dimension values, and description of class scores."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P1",
+    "page": 22,
+    "score": 0.75,
+    "scores": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "There are 5 labelled training images shown, labeled 'deer', 'bird', 'plane', 'cat', and 'car'.",
+      "The query image is an image of a cat, marked with a question mark above it because it is unlabelled and needs classification.",
+      "It takes a query image and a training image as inputs, and returns a real number (a real-valued distance score in R).",
+      "I can't tell from what I have. The text explains that it uses a distance metric to identify the closest neighbor, but it does not explicitly state the decision rule for assigning the final label."
+    ],
+    "effort": 2,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Small labels and visual diagrams on the slide are completely unreadable for me without text transcriptions."
+    ],
+    "what_worked": [
+      "The screen reader text breakdown of slide parts, relationships, and math formulas provided all necessary information."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P1",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The final L1 distance score is 456.",
+      "The top left cell of the test image is 56, and the top left cell of the training image is 10.",
+      "Each cell in the third grid is computed by taking the absolute value of the difference between corresponding cells in the test image and training image matrices.",
+      "Each grid is 4x4."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Visual grids with numbers are impossible to read at 400 percent zoom without screen reader table descriptions."
+    ],
+    "what_worked": [
+      "The provided text explicitly detailed the grid values, formula, and step-by-step arithmetic, making it easy for screen reader navigation."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P1",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The linear classifier is defined by the equation f(x, W) = W x + b.",
+      "The input image consists of 3072 numbers total because it is a 32x32 color image with 3 channels.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numerical values giving class scores for each of the 10 target classes."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The original slide layout relies heavily on visual diagrams with small dimension labels that are completely unreadable for me when zooming in.",
+      "Having to parse visual matrix operations through text descriptions rather than seeing the diagram layout clearly."
+    ],
+    "what_worked": [
+      "The detailed screen reader text provided a clear breakdown of the formula, input dimensions, weight matrix size, and what the output vector represents."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P2",
+    "page": 22,
+    "score": 0.5,
+    "scores": [
+      0.5,
+      0.5,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "The text lists 5 category labels (deer, bird, plane, cat, car), but I can't tell the exact number of individual training images shown from the text given.",
+      "The query image is an unlabelled image marked with a question mark ('?'); I can't tell any further details from the text about why it is marked.",
+      "According to the text, the distance metric takes a query image and training images as input and returns a real number representing dissimilarity.",
+      "I can't tell from what I have."
+    ],
+    "effort": 4,
+    "confidence": 3,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The screen reader text lists label names but doesn't tell me how many total images are in the visual grid.",
+      "The decision rule for how the nearest neighbor classifier picks the final label is omitted from the slide text."
+    ],
+    "what_worked": [
+      "The provided summary heading gave explicit information about the distance metric's inputs and output.",
+      "Screen reader text successfully extracted the key text labels from the slide."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P2",
+    "page": 23,
+    "score": 0.25,
+    "scores": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "By taking the pixel-by-pixel absolute difference between the test image and the training image.",
+      "I can't tell from what I have"
+    ],
+    "effort": 4,
+    "confidence": 2,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The actual numerical grid values and final distance calculation were in the visual diagram, which my screen reader could not read.",
+      "I cannot see the small numbers in the image matrix even with high magnification."
+    ],
+    "what_worked": [
+      "The text overview provided a clear explanation of how the third grid is computed conceptually."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P2",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The linear classifier is defined by the equation f(x, W) = W x + b.",
+      "The input image is made up of 3072 numbers total because it is an array of 32x32x3 numbers.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 3,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Diagram text labels and dimensions are listed in a scattered order by the screen reader, requiring extra effort to mental-map which dimension belongs to which component."
+    ],
+    "what_worked": [
+      "The slide text explicitly included dimensions, descriptions of the image array, and the full function equation."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P3",
+    "page": 22,
+    "score": 0.625,
+    "scores": [
+      0.5,
+      1,
+      1,
+      0
+    ],
+    "followups": [
+      {
+        "q": "What specific mathematical distance metric, like L1 or L2 distance, is being used here to measure dissimilarity between the images?",
+        "a": "The slide does not specify a named distance metric such as L1 or L2. It only displays a generic formula showing that a distance metric takes a pair of images and maps them to a real number."
+      },
+      {
+        "q": "My screen reader just read out category names like deer, bird, and plane, but what image is actually being shown for the query data marked with the question mark?",
+        "a": "The image shown for the query data is a picture of a cat."
+      },
+      {
+        "q": "How does the output real number from the distance metric get used to assign a final label to the query data?",
+        "a": "The provided slide does not explicitly explain how the output real number from the distance metric is used to assign a final label to the query data."
+      }
+    ],
+    "answers": [
+      "I can't tell from what I have how many training images are displayed, but the category labels listed are deer, bird, plane, cat, and car.",
+      "The query image is a picture of a cat, and it is marked with a question mark because it represents unlabelled query data.",
+      "The distance metric takes a pair of images as input and returns a real number representing their dissimilarity.",
+      "I can't tell from what I have, as the slide does not explain how the nearest neighbor classifier uses the distance metric output to decide the label."
+    ],
+    "effort": 4,
+    "confidence": 4,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The slide relies on visual diagrams and image grids that screen readers cannot parse for details like image counts.",
+      "The text omits the mathematical explanation of how the nearest neighbor rule selects the final label from the distance values."
+    ],
+    "what_worked": [
+      "The provided Q&A context helped identify that the query image with the question mark was a cat.",
+      "The text description explained the basic input and output of the distance metric."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P3",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "What is the exact mathematical formula for the L1 distance shown on the slide?",
+        "a": "The mathematical formula for the L1 distance on the slide is d_1(I_1, I_2) = \\sum_{p} |I_1^p - I_2^p|."
+      },
+      {
+        "q": "Can you provide the specific numbers and pixel-by-pixel subtraction steps from the worked example?",
+        "a": "The worked example subtracts a 4x4 training image from a 4x4 test image and takes the absolute value for each pixel:\n\nRow 1:\n|56 - 10| = 46\n|32 - 20| = 12\n|10 - 24| = 14\n|18 - 17| = 1\n\nRow 2:\n|90 - 8| = 82\n|23 - 10| = 13\n|128 - 89| = 39\n|133 - 100| = 33\n\nRow 3:\n|24 - 12| = 12\n|26 - 16| = 10\n|178 - 178| = 0\n|200 - 170| = 30\n\nRow 4:\n|2 - 4| = 2\n|0 - 32| = 32\n|255 - 233| = 22\n|220 - 112| = 108\n\nAdding all 16 absolute differences together results in a total L1 distance of 456."
+      },
+      {
+        "q": "What is the final scalar distance score result from that worked example?",
+        "a": "The final scalar distance score result from the worked example is 456."
+      }
+    ],
+    "answers": [
+      "The total L1 distance between the two images in the example is 456.",
+      "The top left cell value is 56 for the test image and 10 for the training image.",
+      "Each cell in the third grid is computed by taking the absolute difference between the corresponding pixel value of the test image and the training image (|I1 - I2|).",
+      "Each grid is 4x4 (4 pixels by 4 pixels)."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The raw slide visual content itself had very little usable text for screen readers, but the text transcript in the follow-up Q&A saved me from having to zoom in and hunt through pixel grids visually."
+    ],
+    "what_worked": [
+      "Having the screen reader text clearly breakdown the calculations row-by-row made understanding the math grid visual effortless."
+    ]
+  },
+  {
+    "persona": "C",
+    "variant": "P3",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "My screen reader picked up a bunch of floating dimensions like 3072x1, 10x1, and 10x3072, but how are these dimensions visually assigned to each specific term in the equation f(x,W) = Wx + b on the slide?",
+        "a": "In the equation f(x,W) = Wx + b, f(x,W) is assigned 10x1, W is assigned 10x3072, x is assigned 3072x1, and b is assigned 10x1."
+      },
+      {
+        "q": "Where is the bias term b visually located in the diagram relative to the weight matrix W and the input x?",
+        "a": "The bias term b is located to the right of the weight matrix W and the input x, separated by a plus sign."
+      },
+      {
+        "q": "How does the diagram visually show the transition from the 32x32x3 image array to the 3072x1 vector?",
+        "a": "The slide notes below the image that the 32x32x3 array equals 3072 total numbers, and an arrow points from the image into the function f(x, W), where the input vector x is labeled with dimensions 3072x1."
+      }
+    ],
+    "answers": [
+      "The linear classifier is defined by the equation f(x,W) = W x + b.",
+      "3072 numbers make up the input image because it is an array of 32x32x3 numbers (32 x 32 x 3 = 3072).",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The floating dimension numbers in the raw screen reader text were initially disjointed from their visual elements."
+    ],
+    "what_worked": [
+      "The clear text descriptions and previous follow-up answers explicitly detailed the equation, matrix dimensions, and number calculations."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P0",
+    "page": 22,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have"
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged, so any visual images were completely skipped by my screen reader.",
+      "The page content is just a disjointed list of words with no context or explanatory text.",
+      "None of the concepts like how the classifier works or what the distance metric takes as input are explained in the text."
+    ],
+    "what_worked": [
+      "The raw text layer was read aloud, so I could at least hear the slide title and listed text terms."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P0",
+    "page": 23,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have"
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is untagged so all the images and grids were completely skipped by my screen reader.",
+      "There are no actual numbers, matrices, or calculations in the text output, just titles and header information."
+    ],
+    "what_worked": [
+      "The screen reader was able to read the few lines of header and footer text present on the page."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P0",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "f(x,W) = W x + b",
+      "3072 numbers total, because it is an array of 32x32x3 numbers.",
+      "10x3072",
+      "10 numbers giving class scores"
+    ],
+    "effort": 4,
+    "confidence": 3,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The untagged PDF presents text fragments and dimensions out of order, making it very confusing on my braille display.",
+      "The image diagram was skipped completely, leaving math notation and random matrix sizes floating around without clear context.",
+      "Deciphering visual matrix layouts and dimensions from raw text stream is overwhelming."
+    ],
+    "what_worked": [
+      "The basic equation f(x,W) = W x + b was captured clearly as text.",
+      "Key explanations like '3072 numbers total' and 'giving class scores' were written out in plain text."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P1",
+    "page": 22,
+    "score": 0.75,
+    "scores": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "There are 5 labelled training images shown: deer, bird, plane, cat, and car.",
+      "The query image is an unlabelled image of a cat, and it is marked with a question mark above it.",
+      "It takes a query image and a training image as inputs, and returns a real-valued distance score (a real number in R).",
+      "I can't tell from what I have. The text mentions comparing the query image against training images using a distance metric to identify the closest neighbor, but it does not explicitly explain the rule for assigning the final label."
+    ],
+    "effort": 3,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Raw LaTeX math notation like \\mathbb{R} and symbol formatting is tricky to read on my braille display.",
+      "Reading descriptions of visual diagrams and layout arrangements takes extra effort."
+    ],
+    "what_worked": [
+      "The clear headings like 'Parts' and 'How the parts relate' broken down into text helped me understand what was on the slide without needing to see it."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P1",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The L1 distance between the two images is 456.",
+      "The top left cell of the test image is 56, and the top left cell of the training image is 10.",
+      "Each cell of the third grid is computed by subtracting the cell of the training image matrix from the corresponding cell of the test image matrix and taking the absolute value of the result.",
+      "Each grid is 4x4."
+    ],
+    "effort": 4,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Math notation with subscripts, superscripts, and summation symbols like LaTeX syntax is cumbersome to read on a braille display.",
+      "Reading matrix grids row by row takes a lot of tedious navigation on a refreshable display."
+    ],
+    "what_worked": [
+      "The clear text summary explicitly broke down the math steps and stated the final sum clearly.",
+      "The tables were formatted nicely in rows, making it easy to check individual pixel values."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P1",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The equation defining the linear classifier is f(x, W) = W x + b.",
+      "3072 numbers total, because it comes from a 32x32 color image with 3 channels (32 x 32 x 3).",
+      "The dimensions of W are 10x3072.",
+      "It represents 10 numerical values giving class scores for target classes."
+    ],
+    "effort": 4,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Math notation and matrix dimensions are annoying and awkward to read on my braille display.",
+      "There are a lot of scattered numbers and vector sizes to keep track of."
+    ],
+    "what_worked": [
+      "The clear text descriptions and lists under the headings broken down by part made finding the specific answers straightforward."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P2",
+    "page": 22,
+    "score": 0.375,
+    "scores": [
+      0.5,
+      0.5,
+      0.5,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell the exact number of images shown from what I have, but the labels listed are deer, bird, plane, cat, and car.",
+      "The query image is an unlabelled image marked with a question mark ('?'), but I can't tell why it is marked beyond that.",
+      "It takes a query image and training images as input and outputs a real number.",
+      "I can't tell from what I have."
+    ],
+    "effort": 4,
+    "confidence": 2,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The text gives a list of category labels and vague visual descriptions, but doesn't explain the actual visual images or how the classifier works step-by-step.",
+      "Important information about how the decision is made or how many images are on screen is hidden in visual diagrams that my braille display cannot show me."
+    ],
+    "what_worked": [
+      "The overview heading provided a basic explanation that the distance metric outputs a real number."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P2",
+    "page": 23,
+    "score": 0.25,
+    "scores": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "It is computed by taking the pixel-by-pixel absolute difference between the test image and the training image.",
+      "I can't tell from what I have"
+    ],
+    "effort": 4,
+    "confidence": 2,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The visual grids and actual numerical values from the worked example were completely missing from the text provided to my screen reader.",
+      "The summary mentions a worked example and grids, but I cannot read the numbers or grid dimensions."
+    ],
+    "what_worked": [
+      "The overview text gave a high-level explanation that L1 distance uses pixel-by-pixel absolute differences."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P2",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "f(x,W) = W x + b",
+      "3072 numbers total, because it is an array of 32x32x3 numbers.",
+      "10x3072",
+      "10 numbers giving class scores."
+    ],
+    "effort": 4,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The math notation and matrix dimensions were scattered across the text without clear context, making it hard to follow on my braille display.",
+      "Disconnected labels like '10x1' and '3072x1' made it confusing to figure out which label belonged to which part of the equation."
+    ],
+    "what_worked": [
+      "The Overview heading helped summarize the main formula and what the pieces meant.",
+      "The text was short enough that I didn't have to scroll through a huge page."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P3",
+    "page": 22,
+    "score": 0.5,
+    "scores": [
+      0.5,
+      0.5,
+      1,
+      0
+    ],
+    "followups": [
+      {
+        "q": "My braille display just lists random words like deer, bird, plane, cat, and car\u2014how is the query data actually compared to these training items without relying on visual images?",
+        "a": "The query data is compared to the training items using a Distance Metric, which takes the query item and a training item and maps them to a real number representing the distance between them."
+      },
+      {
+        "q": "The summary mentions a distance metric that outputs a real number, but what is the actual math or formula being used to calculate this dissimilarity?",
+        "a": "The slide does not provide a specific formula or mathematical equation for calculating the distance metric; it only shows abstractly that the metric takes two images as input and outputs a real number."
+      },
+      {
+        "q": "What does the lone question mark symbol in the text represent, and how does it connect to the query data or the training labels?",
+        "a": "The question mark above the query data image represents the unknown label that needs to be predicted. The Nearest Neighbor classifier compares the query image to the labeled training data\u2014which includes deer, bird, plane, cat, and car\u2014to determine its label."
+      }
+    ],
+    "answers": [
+      "The text lists 5 labels (deer, bird, plane, cat, and car), but I can't tell the exact number of visual images shown from what I have.",
+      "I can't tell what object the query image actually depicts from the text. It is marked with a question mark because its label is unknown and needs to be predicted.",
+      "It takes two items/images as input (a query item and a training item) and returns a real number representing the distance or dissimilarity between them.",
+      "I can't tell the exact decision rule from what I have; the text and Q&A only state that it compares the query image to the labeled training data using the distance metric to determine its label."
+    ],
+    "effort": 4,
+    "confidence": 3,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The slide uses visual images that my braille display just reads as a disconnected list of words like 'deer' or a random question mark.",
+      "Key details about what the images actually depict and how the classifier makes its final choice are missing from the text."
+    ],
+    "what_worked": [
+      "The previous follow-up Q&A clarified the inputs and outputs of the distance metric and what the question mark stood for."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P3",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "The slide text just says 'add', but the summary mentions a mathematical formula\u2014what is the actual formula spelled out clearly without confusing symbols?",
+        "a": "The L1 distance between two images is the sum over all pixels of the absolute value of the difference between the corresponding pixel values of the two images."
+      },
+      {
+        "q": "Can you walk me through the worked example step-by-step using plain numbers instead of visual pixel grids?",
+        "a": "To calculate the L1 distance, find the pixel-wise absolute difference between the test image and training image values, then sum them up. Row 1 differences: |56 - 10| = 46, |32 - 20| = 12, |10 - 24| = 14, |18 - 17| = 1. Row 2 differences: |90 - 8| = 82, |23 - 10| = 13, |128 - 89| = 39, |133 - 100| = 33. Row 3 differences: |24 - 12| = 12, |26 - 16| = 10, |178 - 178| = 0, |200 - 170| = 30. Row 4 differences: |2 - 4| = 2, |0 - 32| = 32, |255 - 233| = 22, |220 - 112| = 108. Adding all 16 difference values together gives a final L1 distance of 456."
+      },
+      {
+        "q": "What does the resulting scalar distance score actually mean when comparing two images?",
+        "a": "The resulting scalar distance score is the sum of all the pixel-wise absolute value differences between the two images, which represents the L1 distance between them."
+      }
+    ],
+    "answers": [
+      "The final L1 distance between the two images is 456.",
+      "The top left cell value for the test image is 56, and for the training image it is 10.",
+      "Each cell in the third grid is computed by taking the absolute difference between the corresponding pixel value of the test image and the training image.",
+      "Each grid is 4 by 4 (4 rows and 4 columns, containing 16 pixels total)."
+    ],
+    "effort": 3,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The original slide text was totally useless, just saying 'add' without describing the grid.",
+      "Sifting through long lists of numbers and arithmetic differences on a refreshable braille display is slow and tedious."
+    ],
+    "what_worked": [
+      "The step-by-step text breakdown in the follow-up answers translated the visual grid into plain numbers row by row, making it completely accessible without needing to see the visual."
+    ]
+  },
+  {
+    "persona": "D",
+    "variant": "P3",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "Can you explain what the formula f(x, W) = W x + b actually means in plain words without all these confusing dimension numbers like 3072x1 and 10x3072?",
+        "a": "The formula describes a linear classifier that computes class scores for an input image. It multiplies the image data (x) by a set of learned parameters or weights (W), and then adds a bias term (b) to produce the final scores for each class."
+      },
+      {
+        "q": "How do the 32x32x3 numbers turn into the 3072 total numbers for the input vector x?",
+        "a": "The 32x32x3 numbers represent the dimensions of the image array, which total 3072 numbers when multiplied together (32 times 32 times 3)."
+      },
+      {
+        "q": "What are the 10 final numbers giving class scores supposed to represent in this problem?",
+        "a": "According to the slide, the 10 final numbers represent the class scores output by the function f(x, W)."
+      }
+    ],
+    "answers": [
+      "The equation defining the linear classifier is f(x,W) = W x + b.",
+      "There are 3072 total numbers because the image is an array of 32x32x3 numbers, and multiplying 32 by 32 by 3 equals 3072.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 4,
+    "confidence": 4,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The screen reader text dumps random matrix dimensions like 10x3072 and 3072x1 on separate lines, making it hard to tell what labels go with what visual elements.",
+      "Math notation and matrix operations are difficult and frustrating to read on a braille display."
+    ],
+    "what_worked": [
+      "The follow-up questions and overview heading translated the visual layout and mathematical formulas into clear, plain language."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P0",
+    "page": 22,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have"
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The PDF is completely untagged, so all images and visual diagrams defining the classifier and distance metric were skipped.",
+      "The screen reader just reads disconnected words like 'deer', 'bird', '?', and 'Distance Metric' with no explanatory text or alt text.",
+      "I cannot prepare for class in ten minutes when key visual concepts lack text descriptions."
+    ],
+    "what_worked": [
+      "The basic text elements like slide titles and category label strings were detected by the screen reader."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P0",
+    "page": 23,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have"
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      " completely untagged slide meant all the image content showing the grids, numbers, and L1 distance calculation was completely skipped.",
+      "Only slide title and metadata were accessible, leaving me totally unable to study the example right before lecture."
+    ],
+    "what_worked": [
+      "The header text and slide metadata (authors, date, lecture number) were read accurately by the screen reader."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P0",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The linear classifier is defined by the equation f(x,W) = W x + b.",
+      "The input image consists of 3072 numbers total because it is an array of 32x32x3 numbers.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 3,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The text layer from the untagged PDF is fragmented, listing dimensions like 10x3072, 3072x1, and 10x1 out of order without context.",
+      "Image diagrams were skipped completely by the screen reader."
+    ],
+    "what_worked": [
+      "All essential details\u2014equation, matrix dimensions, input size, and label definitions\u2014were present in the extracted text layer."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P1",
+    "page": 22,
+    "score": 0.75,
+    "scores": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "There are five labeled training images shown: 'deer', 'bird', 'plane', 'cat', and 'car'.",
+      "The query image is an unlabelled image of a cat, marked with a question mark above it because it is unlabelled.",
+      "The distance metric takes a query image and a training image as input and returns a real number (a distance score in R).",
+      "I can't tell from what I have (the text mentions identifying the closest neighbor via distance scores, but does not explicitly state the final decision/label assignment rule)."
+    ],
+    "effort": 2,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The text doesn't explicitly spell out the final classification rule, leaving me uncertain if information was left off the slide text."
+    ],
+    "what_worked": [
+      "The structured headings (Overview, Parts, How the parts relate, Formulas) allowed me to navigate directly to the image labels, inputs, and outputs quickly before lecture."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P1",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "456",
+      "The top left cell of the test image is 56, and the top left cell of the training image is 10.",
+      "Each cell in the third grid is computed by taking the absolute value of the difference between the corresponding cell in the test image and the training image.",
+      "Each grid is 4x4 (4 rows by 4 columns)."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Raw LaTeX math notation can be clunky to listen to quickly on a screen reader when scanning right before class."
+    ],
+    "what_worked": [
+      "The tables for the test image, training image, and differences were formatted clearly as text rows, making them very easy to navigate.",
+      "The step-by-step summary explicitly stated the arithmetic operations and the final sum score."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P1",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "f(x, W) = W x + b",
+      "3072 numbers total, because it is a 32x32 color image with 3 channels (32x32x3).",
+      "10x3072",
+      "10 numbers giving class scores for each of the target classes."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The initial visual text dump at the top was fragmented with random dimension labels visually scattered everywhere."
+    ],
+    "what_worked": [
+      "The structured headings nicely parsed the mathematical dimensions, visual parts, and equation relationships clearly for my screen reader."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P2",
+    "page": 22,
+    "score": 0.5,
+    "scores": [
+      0.5,
+      0.5,
+      1,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "The text lists 5 labels (deer, bird, plane, cat, car), but I can't tell the exact number of training images shown from the text provided.",
+      "The query image is an unlabelled image marked with a question mark (?) to indicate its label is unknown, but I can't tell what object is depicted in it from the text.",
+      "It takes a query image and training images as input and outputs a real number representing dissimilarity.",
+      "I can't tell from what I have."
+    ],
+    "effort": 4,
+    "confidence": 3,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The slide text is just a raw list of words, so I can't tell how many visual image thumbnails correspond to each label.",
+      "The explicit classification decision rule for nearest neighbor is omitted from the accessible text/description."
+    ],
+    "what_worked": [
+      "The overview section clearly summarized the inputs and outputs of the distance metric."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P2",
+    "page": 23,
+    "score": 0.0,
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "followups": [],
+    "answers": [
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have",
+      "I can't tell from what I have"
+    ],
+    "effort": 5,
+    "confidence": 1,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The slide text and descriptions omit all the actual pixel values, grid dimensions, and specific calculations shown in the worked example.",
+      "The screen reader text leaves out the image grids entirely, making it impossible to answer specific numerical questions right before lecture."
+    ],
+    "what_worked": [
+      "The overview section provided a useful high-level summary that L1 distance sums pixel-by-pixel absolute differences."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P2",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [],
+    "answers": [
+      "The equation defining the linear classifier is f(x,W) = W x + b.",
+      "The input image is made up of 3072 numbers total because it is an array of 32x32x3 numbers.",
+      "The dimensions of W are 10x3072.",
+      "The output of f represents 10 numbers giving class scores."
+    ],
+    "effort": 2,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The screen reader text extracted from the visual diagram presents dimensions like 3072x1, 10x1, and 10x3072 in a jumbled, out-of-order sequence."
+    ],
+    "what_worked": [
+      "The overview heading clearly summarized the main equation f(x,W) = W x + b, and explicit textual descriptions of the input array size and class scores made answering easy."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P3",
+    "page": 22,
+    "score": 0.75,
+    "scores": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "followups": [
+      {
+        "q": "My screen reader just read out a jumble of labels like deer, bird, and plane alongside a question mark\u2014how are the query image and labeled training images visually arranged to show how nearest neighbor works?",
+        "a": "On the left side, five small training images are displayed in a horizontal row under their respective labels: deer, bird, plane, cat, and car. To the right, a larger single image is shown beneath a question mark and labeled as query data. Below these sections, a distance metric formula compares the query image with a training image."
+      },
+      {
+        "q": "Does the slide state which specific distance metric formula is being used to compute dissimilarity, or is it just mentioning the concept generally?",
+        "a": "The slide only mentions the concept generally using a generic notation and does not state a specific distance metric formula."
+      },
+      {
+        "q": "What is the final prediction output or calculated distance score shown for this query image?",
+        "a": "No specific numerical score or prediction label is provided on the slide; instead, the distance metric maps the query image and training image to a real number, represented by the mathematical symbol R, while the prediction for the query image is marked with a question mark."
+      }
+    ],
+    "answers": [
+      "Five labeled training images are shown, with the labels deer, bird, plane, cat, and car.",
+      "The query image is a single image labeled 'query data', marked with a question mark because its category label is unknown and needs to be predicted.",
+      "It takes a query image and a training image as input and returns a real number representing dissimilarity.",
+      "I can't tell from what I have."
+    ],
+    "effort": 2,
+    "confidence": 4,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "The initial raw slide text was just a jumbled list of labels and a question mark with no structural or spatial context.",
+      "The slide content doesn't actually explain the rule for how Nearest Neighbor uses the distances to choose the final label."
+    ],
+    "what_worked": [
+      "The follow-up Q&A clarified the layout of the training row versus the query image and explained the distance metric inputs and output."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P3",
+    "page": 23,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "My screen reader literally just read 'L1 distance: add'\u2014what is the actual mathematical formula for L1 distance on the slide?",
+        "a": "The formula shown for L1 distance is d_1(I_1, I_2) = sum over p of |I_1^p - I_2^p|, which sums the absolute value differences of each pixel p between two images, I_1 and I_2."
+      },
+      {
+        "q": "The overview mentions a worked example comparing pixel values, but what are the actual numbers in the test and training image grids?",
+        "a": "The test image grid contains four rows:\n- Row 1: 56, 32, 10, 18\n- Row 2: 90, 23, 128, 133\n- Row 3: 24, 26, 178, 200\n- Row 4: 2, 0, 255, 220\n\nThe training image grid contains four rows:\n- Row 1: 10, 20, 24, 17\n- Row 2: 8, 10, 89, 100\n- Row 3: 12, 16, 178, 170\n- Row 4: 4, 32, 233, 112"
+      },
+      {
+        "q": "What is the final scalar distance score calculated in the worked example?",
+        "a": "The final scalar distance score calculated in the worked example is 456."
+      }
+    ],
+    "answers": [
+      "456",
+      "The top left cell value of the test image is 56, and of the training image is 10.",
+      "Each cell is computed by taking the absolute value of the difference between corresponding pixels of the test image and the training image (|I_1^p - I_2^p|).",
+      "4x4 (4 rows and 4 columns)."
+    ],
+    "effort": 3,
+    "confidence": 5,
+    "needs_sighted_help": true,
+    "frustrations": [
+      "The raw slide text extracted by OCR was almost completely blank and missing the math and image grids ('L1 distance: add').",
+      "Important visual information like matrix grids and mathematical equations are presented as unlabelled images without proper alt text."
+    ],
+    "what_worked": [
+      "The provided Q&A history successfully filled in the visual grid values, mathematical equation, and final calculated score."
+    ]
+  },
+  {
+    "persona": "E",
+    "variant": "P3",
+    "page": 52,
+    "score": 1.0,
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "followups": [
+      {
+        "q": "My screen reader lists dimensions like 10x1, 10x3072, and 3072x1 out of context\u2014can you clarify which dimensions explicitly belong to W, x, b, and the output f(x,W)?",
+        "a": "According to the slide, the matrix and vector dimensions are: W is 10x3072, x is 3072x1, b is 10x1, and the output f(x,W) is 10x1."
+      },
+      {
+        "q": "How is the 32x32x3 image tensor flattened or reshaped into the 3072x1 input vector x?",
+        "a": "The slide does not explain the specific reshaping method or ordering. It only notes that the image is an array of 32x32x3 numbers, giving a total of 3072 numbers that form the 3072x1 vector x."
+      },
+      {
+        "q": "Does the slide text specify which 10 target categories correspond to the 10 output class scores?",
+        "a": "No, the slide only mentions that there are 10 numbers giving class scores, but it does not specify what the 10 target categories are."
+      }
+    ],
+    "answers": [
+      "f(x,W) = W x + b",
+      "3072 numbers make up the input image because it is an array of 32x32x3 numbers.",
+      "10x3072",
+      "10 numbers giving class scores."
+    ],
+    "effort": 3,
+    "confidence": 5,
+    "needs_sighted_help": false,
+    "frustrations": [
+      "Dimensions were read completely out of context by my screen reader (like 10x1, 10x3072, 3072x1 scattered randomly).",
+      "Spatial visual layouts linking vectors to formulas don't translate naturally to text."
+    ],
+    "what_worked": [
+      "The slide explicitly provides the equation f(x,W) = W x + b.",
+      "The follow-up Q&A effectively disambiguated which dimensions belonged to which variables."
+    ]
+  }
+]

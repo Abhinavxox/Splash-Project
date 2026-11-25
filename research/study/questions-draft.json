@@ -1,0 +1,33 @@
+{
+  "_status": "DRAFT written by Claude on Nov 25 for testing the simulation harness only. Shrijana writes and freezes the real questions before any session (final plan, Nov 27).",
+  "pdf": "test-data/cs231n_lecture2.pdf",
+  "slides": [
+    {
+      "page": 22,
+      "questions": [
+        {"q": "How many labelled training images are shown, and what are their labels?", "key": "Five: deer, bird, plane, cat, car."},
+        {"q": "What is the query image, and why is it marked?", "key": "A photo of a cat; its label is unknown (question mark)."},
+        {"q": "What does the distance metric take as input and what does it return?", "key": "Two images; it returns a single real number."},
+        {"q": "How does the nearest neighbour classifier decide the label of the query?", "key": "It gives the query the label of the training image with the smallest distance, here cat."}
+      ]
+    },
+    {
+      "page": 23,
+      "questions": [
+        {"q": "What is the L1 distance between the two images in the example?", "key": "456."},
+        {"q": "What is the value in the top left cell of the test image, and of the training image?", "key": "56 and 10."},
+        {"q": "How is each cell of the third grid computed?", "key": "Absolute value of test pixel minus training pixel for that position."},
+        {"q": "What is the size of each grid?", "key": "4 by 4."}
+      ]
+    },
+    {
+      "page": 52,
+      "questions": [
+        {"q": "What equation defines the linear classifier?", "key": "f(x, W) = Wx + b."},
+        {"q": "How many numbers make up the input image and why?", "key": "3072, because it is 32 by 32 by 3."},
+        {"q": "What are the dimensions of W?", "key": "10 by 3072."},
+        {"q": "What does the output of f represent?", "key": "10 numbers, one class score per class."}
+      ]
+    }
+  ]
+}

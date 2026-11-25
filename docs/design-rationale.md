@@ -15,6 +15,23 @@ A blind or low vision university student learns **the same information** as clas
 
 The independence part comes straight from SAS: relying on people (scribes, often GAs) is "where bottlenecks happen and that's where barriers come." `[SAS]`
 
+## 1b. The struggle: what getting the information costs a student today
+
+The problem is not only that information is missing. Getting it takes work, time and other people, and sighted classmates pay none of that.
+
+| What the student goes through | Evidence |
+|---|---|
+| **Has to depend on another person.** A scribe or GA must understand the material and must not give answers. Every such dependency is where "bottlenecks happen and… barriers come" | `[SAS]` |
+| **Arrives at the lecture unprepared.** The ideal is to have the material in digital form before the lecture to follow along. When the professor's format is wrong, that doesn't happen | `[SAS]` |
+| **Waits.** If a textbook isn't available digitally, SAS contacts the publisher, proves the purchase, and may cut the spine off and scan the book. How long this takes depends on the original format | `[SAS]`, `[EV]` (2–10 business days published) |
+| **Gets material that a scan can't fix.** Old photocopied handouts defeat OCR | `[SAS]` |
+| **Spends extra hours.** For example, 30 minutes for a 5-minute video, and 12 hours a week for statistics | `research/research-questions.md` J |
+| **Finds even the help is made for sighted people.** A blind student found screen-reader tutorials "made for sighted teachers" | `[EV]` #5 |
+| **Is shut out of the course content.** Blind graduate students at WVU could not read their course PDFs, which led to a complaint | `[EV]` #37 |
+| **Every student differs, and some find any new software a burden.** So a fix that adds learning effort adds to the struggle | `[SAS]` |
+
+What this means for the design: the release must reduce **effort** and **dependence**, not only accuracy. So the tests record effort, confidence and "would need sighted help" (see `results/sim/summary.md` and M2), alongside correct answers.
+
 ## 2. Who the users are, and how they differ
 
 SAS was clear that there is no single "blind student." Solutions "are all very, very tuned to that person," and a fix that works for one person may not help the next. `[SAS]` So we do not design for one average student. We name the dimensions on which students differ and make the design handle each one.
@@ -82,6 +99,16 @@ User requirements R1–R3 `[ER03]` say what the student needs. The engineering r
 2. **In the test:** each M2 participant gives a short profile: vision (D1), onset (D2), screen reader and skill (D3), braille use (D4), field of study (D5). It is stored anonymized. **Results are reported per participant, not only as an average**, so we can see where the design works and where it does not.
 3. **In the claims:** with a few participants we cannot claim the design works for all students. We claim results for the profiles we tested, and we list the profiles we did not test.
 4. **After the course:** the January SAS study, the CTL assistive technology specialist and CNIB are the route to wider profiles.
+
+## 6b. Testing ladder: from cheap checks to real users
+
+| Step | What | What it can show | What it cannot show |
+|---|---|---|---|
+| 1 | **Simulated personas** (`prototype/simulate.py`): AI students with different profiles try variants P0–P3 | Which variant is stronger; broken questions; obvious gaps. Cheap and repeatable | Anything about real students. The personas barely differed from each other |
+| 2 | Team members use VoiceOver and NVDA with the screen off (Q1) | Navigation, how the math is spoken, real screen reader behaviour | Real blind users' skills, habits and needs |
+| 3 | Real blind and low vision participants (M2) | **Impact**: comprehension, effort, independence | Generalisation beyond the profiles we tested |
+
+The first simulation (Nov 25) favoured full mode (92% vs 35% for the original PDF). It found a flawed draft question and a possible braille-reading issue with raw LaTeX. Full results: `results/sim/summary.md`.
 
 ## 7. Questions we must be able to answer at the defense
 
