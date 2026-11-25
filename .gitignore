@@ -4,3 +4,11 @@ node_modules/
 .DS_Store
 *.log
 research/pdf-scan/pdfs/
+
+# raw interview recordings and transcripts (contain names, never push)
+research/interviews/raw/
+
+# prototype release
+prototype/.venv/
+prototype/out/
+__pycache__/
