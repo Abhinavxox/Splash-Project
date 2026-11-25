@@ -22,6 +22,7 @@ The release counts as operationally complete only if all of these hold, on real 
 3. **Output:** one accessible HTML page per lecture. It has headings for each slide, layered descriptions, MathML and real tables, as in the current `make_accessible.py`.
 4. **Runs end to end** from one command or a simple web page, without a team member editing anything in between.
 5. **Logged cost and time** for every run, written to a CSV.
+6. **Per-student settings** (`docs/design-rationale.md`, ERQ2, ERQ3, ERQ6, ERQ10): descriptions that never rely on visual comparison or colour alone, LaTeX source next to each formula, the original slide image kept for low vision readers, and a brief/full depth setting.
 
 Not required for the release: a polished UI, accounts or hosting at scale.
 
@@ -34,6 +35,8 @@ Not required for the release: a polished UI, accounts or hosting at scale.
 | **M3** Independence and time | Access without waiting for a person | Time from receiving the PDF to having an accessible version | Published SAS turnaround of 2–10 business days, with a person in the loop (evidence register) | **≤ 10 minutes** per lecture with no person involved |
 | **M4** Cost | Affordable for one institution | API cost per lecture, from the run log | Scribe or GA time per lecture. Estimate in the cost sheet | **≤ CAD $2** per 50-slide lecture |
 | **Q1** Quality | Output is usable with a screen reader | Automated check (axe-core: 0 serious violations). Manual run with VoiceOver and NVDA: navigate by heading, read the math and tables | Original PDFs in our scan | All checks pass on every test lecture |
+
+**Every student is different.** Each M2 participant gives an anonymized profile: vision level, age at vision loss, screen reader and skill, braille use, and field of study. M2 is reported **per participant against the threshold**, not only as an average. Claims are limited to the profiles we tested (`docs/design-rationale.md`, section 6).
 
 **What counts as the problem being reduced:** M1 and M2 met within the scope above. M3, M4 and Q1 support the claim but cannot replace M2.
 
