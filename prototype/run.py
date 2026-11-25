@@ -21,6 +21,7 @@ import pathlib
 import subprocess
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 import build_html
 import describe
@@ -60,6 +61,7 @@ def main():
     ap.add_argument("pdf")
     ap.add_argument("--out", default=None, help="output folder (default: out/<pdf name>)")
     ap.add_argument("--pages", default=None, help="e.g. 1-5,9 (default: all)")
+    ap.add_argument("--workers", type=int, default=8, help="slides described in parallel (default 8)")
     ap.add_argument("--offline", default=None, help="descriptions JSON, skips the API (testing only)")
     args = ap.parse_args()
 
@@ -80,28 +82,37 @@ def main():
     start = time.time()
     slides, errors = [], []
     tokens_in = tokens_out = 0
-    for p in pages:
+    def one(p):
+        """Render, read and describe one page. Pages run in parallel (I/O bound)."""
         text = page_text(str(pdf), p)
         image = render(str(pdf), p, out / "images")
         title = next((l.strip() for l in text.splitlines() if l.strip()), f"Slide {p}")
+        usage, err = {"input_tokens": 0, "output_tokens": 0}, None
         if offline is not None:
             d = offline.get(p)
             if d is None:
-                continue
+                return None
             d = {"has_visual": True, **d}
         else:
             try:
                 d, usage = describe.describe(client, image, text, out / "descriptions" / f"page-{p:03d}.json")
-            except describe.DescribeError as err:
-                errors.append((p, str(err)))
-                print(f"page {p}: {err}", file=sys.stderr)
+            except describe.DescribeError as e:
+                err = str(e)
                 d = {"has_visual": False, "overview": f"This slide could not be described automatically ({err}).",
                      "parts": [], "relationships": "", "math": [], "tables": []}
-                usage = {"input_tokens": 0, "output_tokens": 0}
+        print(f"page {p} done" + (f" (failed: {err})" if err else ""), file=sys.stderr)
+        return {"page": p, "title": title, "text": text, "description": d, "image": image}, usage, err
+
+    with ThreadPoolExecutor(max_workers=args.workers) as ex:
+        for res in ex.map(one, pages):  # map keeps page order
+            if res is None:
+                continue
+            slide, usage, err = res
+            slides.append(slide)
             tokens_in += usage["input_tokens"]
             tokens_out += usage["output_tokens"]
-        slides.append({"page": p, "title": title, "text": text, "description": d, "image": image})
-        print(f"page {p} done", file=sys.stderr)
+            if err:
+                errors.append((slide["page"], err))
 
     html_path = out / f"{name}-accessible.html"
     display = name.split("_")[-1] if name.startswith("http") else name
