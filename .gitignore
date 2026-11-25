@@ -12,3 +12,4 @@ research/interviews/raw/
 prototype/.venv/
 prototype/out/
 __pycache__/
+prototype/.env

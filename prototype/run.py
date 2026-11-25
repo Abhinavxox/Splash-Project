@@ -73,8 +73,8 @@ def main():
     if args.offline:
         offline = {s["page"]: s for s in json.loads(pathlib.Path(args.offline).read_text())["slides"]}
     else:
-        import anthropic
-        client = anthropic.Anthropic()
+        backend, model, client = describe.load_backend()
+        print(f"backend {backend}, model {model}", file=sys.stderr)
 
     pages = parse_pages(args.pages, page_count(str(pdf)))
     start = time.time()
@@ -107,7 +107,8 @@ def main():
     display = name.split("_")[-1] if name.startswith("http") else name
     build_html.build(display.replace("_", " ").replace("-", " "), slides, html_path)
     seconds = round(time.time() - start, 1)
-    cost = describe.cost_usd({"input_tokens": tokens_in, "output_tokens": tokens_out})
+    cost = None if offline is not None else describe.cost_usd({"input_tokens": tokens_in, "output_tokens": tokens_out})
+    cost_s = "n/a" if cost is None else f"{cost:.4f}"
 
     log = HERE / "runs.csv"
     new = not log.exists()
@@ -117,10 +118,11 @@ def main():
             w.writerow(["timestamp", "pdf", "pages", "mode", "model", "seconds",
                         "input_tokens", "output_tokens", "cost_usd", "failed_pages"])
         w.writerow([datetime.datetime.now().isoformat(timespec="seconds"), pdf.name, len(slides),
-                    "offline" if offline is not None else "live", describe.MODEL, seconds,
-                    tokens_in, tokens_out, f"{cost:.4f}", ";".join(str(p) for p, _ in errors)])
+                    "offline" if offline is not None else "live",
+                    "-" if offline is not None else describe.MODELS[describe.BACKEND], seconds,
+                    tokens_in, tokens_out, cost_s, ";".join(str(p) for p, _ in errors)])
 
-    print(f"\nWrote {html_path}\n{len(slides)} slides, {seconds}s, ${cost:.4f} USD, {len(errors)} failed")
+    print(f"\nWrote {html_path}\n{len(slides)} slides, {seconds}s, cost USD {cost_s}, {len(errors)} failed")
 
 
 if __name__ == "__main__":
