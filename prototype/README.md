@@ -10,12 +10,12 @@ It is a fixed pipeline with one model call per slide. It is not an agent.
 
 ## Run it
 
-Needs `poppler` (pdftoppm, pdftotext, pdfinfo) and `pandoc` (`brew install poppler pandoc`), Python 3.10 or newer, and an Anthropic API key.
+Needs `poppler` (pdftoppm, pdftotext, pdfinfo) and `pandoc` (`brew install poppler pandoc`), Python 3.10 or newer, and a Gemini (or Anthropic) API key.
 
 ```bash
 cd prototype
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-export ANTHROPIC_API_KEY=...        # your own key; never commit it
+# put GEMINI_API_KEY=... in prototype/.env (git-ignored)
 .venv/bin/python run.py path/to/lecture.pdf                 # whole lecture
 .venv/bin/python run.py path/to/lecture.pdf --pages 20-25   # some slides
 ```
@@ -27,7 +27,7 @@ The output goes to `out/<pdf name>/<pdf name>-accessible.html`. Open it in any b
 | File | Role |
 |---|---|
 | `run.py` | Command line entry. Renders pages, calls the describer, builds the page, logs the run |
-| `describe.py` | Vision model call (Claude Opus 5.5) with a fixed prompt and JSON schema. The rules come from ERQ1–ERQ4. Results are cached per page in `out/.../descriptions/`, so a re-run costs nothing |
+| `describe.py` | Vision model call (Gemini 3.6 Flash by default; Claude Opus 5.5 with `SPLASH_BACKEND=claude`) with a fixed prompt and JSON schema. The rules come from ERQ1–ERQ4. Results are cached per page in `out/.../descriptions/`, so a re-run costs nothing |
 | `build_html.py` | HTML builder: headings per slide, layered description, MathML plus LaTeX source, real tables, the original image as a separate file. A **Reading settings** panel (standard labelled controls) lets each student set the detail level, text size, high contrast, whether to include the slide text and the image, and whether to expand LaTeX. Settings are saved in the browser |
 | `simulate.py` | Simulated persona pre-test (not impact evidence). See `results/sim/summary.md` |
 | `runs.csv` | One row per run: time taken, tokens and cost in USD. This is the evidence for M3 and M4. Commit it |
@@ -45,6 +45,7 @@ The 10:44 row in `runs.csv` was a resumed run that reused 75 cached slides. Use 
 
 ## Notes
 
-- The model is `claude-opus-5-5` with server-side fallback on: if the model declines a slide, the API retries it on a fallback model in the same call. A slide that still fails gets a clear "could not be described" note on the page and is listed in `runs.csv`. The run does not stop.
-- Cost uses the list price in `describe.py` (USD 4 per million input tokens, USD 20 per million output tokens). Convert to CAD in the cost sheet.
+- Keys: `GEMINI_API_KEY` (or `ANTHROPIC_API_KEY`) in the environment or in `prototype/.env`, which git ignores. Never commit a key.
+- A slide that still fails gets a clear "could not be described" note on the page and is listed in `runs.csv`. The run does not stop.
+- Cost: the Gemini price is not confirmed, so `runs.csv` shows `n/a`. Set `SPLASH_PRICE_IN` and `SPLASH_PRICE_OUT` (USD per million tokens) from Google's pricing page, then compute cost from the logged tokens. Convert to CAD in the cost sheet.
 - `out/` and `.venv/` are not committed. Test outputs from course PDFs stay local.
